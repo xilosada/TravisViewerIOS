@@ -7,20 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC8BFA3B1C63534C0097F81D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC8BFA391C63534C0097F81D /* Main.storyboard */; };
+		DC2F55291C6A6D4F006A4444 /* BuildTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2F55281C6A6D4F006A4444 /* BuildTableViewController.swift */; };
+		DC2F552B1C6A6D88006A4444 /* BuildTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2F552A1C6A6D88006A4444 /* BuildTableViewCell.swift */; };
+		DC2F552D1C6A6DC6006A4444 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC2F552C1C6A6DC6006A4444 /* Main.storyboard */; };
+		DC2F55331C6A77B0006A4444 /* BuildTableViewCellModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2F55321C6A77B0006A4444 /* BuildTableViewCellModeling.swift */; };
+		DC39F0A21C6C24AC006C95A7 /* BuildTableViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC39F0A11C6C24AC006C95A7 /* BuildTableViewModelSpec.swift */; };
+		DC39F0A31C6C28B8006C95A7 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5E75E41C6BC722004918AD /* RxBlocking.framework */; };
+		DC39F0A41C6C28BF006C95A7 /* RxBlocking.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC5E75E41C6BC722004918AD /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC39F0A51C6C2917006C95A7 /* RxCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB571C6379D80097F81D /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC39F0A61C6C294C006C95A7 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB571C6379D80097F81D /* RxCocoa.framework */; };
+		DC39F0A81C6C2B07006C95A7 /* BuildTableViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC39F0A71C6C2B07006C95A7 /* BuildTableViewControllerSpec.swift */; };
+		DC39F0AB1C6C3172006C95A7 /* RepositoryEntitySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC39F0A91C6C314C006C95A7 /* RepositoryEntitySpec.swift */; };
+		DC39F0AE1C6C3BFD006C95A7 /* NetworkSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8BFBAE1C69D7E10097F81D /* NetworkSpec.swift */; };
+		DC39F0B01C6C3D86006C95A7 /* RepoTableViewModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC39F0AF1C6C3D86006C95A7 /* RepoTableViewModeling.swift */; };
+		DC39F0B21C6C3DF4006C95A7 /* RepoTableViewCellModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC39F0B11C6C3DF4006C95A7 /* RepoTableViewCellModeling.swift */; };
+		DC39F0B41C6C3F4A006C95A7 /* RepoTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC39F0B31C6C3F4A006C95A7 /* RepoTableViewCellModel.swift */; };
+		DC39F0B61C6C4070006C95A7 /* RepoTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC39F0B51C6C4070006C95A7 /* RepoTableViewModel.swift */; };
+		DC5E75E11C6BBBD8004918AD /* RxTests.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = DC5E75E01C6BBBD8004918AD /* RxTests.framework.dSYM */; };
+		DC5E75E61C6BC72B004918AD /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5E75E41C6BC722004918AD /* RxBlocking.framework */; };
+		DC5E75E81C6BC73F004918AD /* RxBlocking.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC5E75E41C6BC722004918AD /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC5E75EA1C6BC784004918AD /* RxBlocking.framework.dSYM in Copy dSYMs */ = {isa = PBXBuildFile; fileRef = DC8BFBD31C6A16380097F81D /* RxBlocking.framework.dSYM */; };
 		DC8BFA401C63534C0097F81D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC8BFA3E1C63534C0097F81D /* LaunchScreen.storyboard */; };
-		DC8BFA4B1C63534C0097F81D /* TravisViewerIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8BFA4A1C63534C0097F81D /* TravisViewerIOSTests.swift */; };
 		DC8BFAA21C6354050097F81D /* TVModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8BFAA11C6354050097F81D /* TVModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC8BFAA91C6354050097F81D /* TVModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFA9F1C6354050097F81D /* TVModel.framework */; };
-		DC8BFAB01C6354050097F81D /* TVModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8BFAAF1C6354050097F81D /* TVModelTests.swift */; };
+		DC8BFAB01C6354050097F81D /* BuildEntitySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8BFAAF1C6354050097F81D /* BuildEntitySpec.swift */; };
 		DC8BFAB41C6354050097F81D /* TVModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFA9F1C6354050097F81D /* TVModel.framework */; };
 		DC8BFAB51C6354050097F81D /* TVModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFA9F1C6354050097F81D /* TVModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DC8BFACB1C6354120097F81D /* TVViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFAC11C6354120097F81D /* TVViewModel.framework */; };
-		DC8BFAD21C6354120097F81D /* TVViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8BFAD11C6354120097F81D /* TVViewModelTests.swift */; };
 		DC8BFAD61C6354120097F81D /* TVViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFAC11C6354120097F81D /* TVViewModel.framework */; };
 		DC8BFAD71C6354120097F81D /* TVViewModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFAC11C6354120097F81D /* TVViewModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DC8BFAED1C6354240097F81D /* TVView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFAE31C6354230097F81D /* TVView.framework */; };
-		DC8BFAF41C6354240097F81D /* TVViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8BFAF31C6354240097F81D /* TVViewTests.swift */; };
 		DC8BFAF81C6354240097F81D /* TVView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFAE31C6354230097F81D /* TVView.framework */; };
 		DC8BFAF91C6354240097F81D /* TVView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFAE31C6354230097F81D /* TVView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DC8BFB051C63552D0097F81D /* TVViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFAC11C6354120097F81D /* TVViewModel.framework */; };
@@ -37,9 +53,50 @@
 		DC8BFB521C63781F0097F81D /* RxCocoa.framework.dSYM in Copy dSYMs */ = {isa = PBXBuildFile; fileRef = DC8BFB481C6377E10097F81D /* RxCocoa.framework.dSYM */; };
 		DC8BFB531C63781F0097F81D /* Quick.framework.dSYM in Copy dSYMs */ = {isa = PBXBuildFile; fileRef = DC8BFB491C6377E10097F81D /* Quick.framework.dSYM */; };
 		DC8BFB541C63781F0097F81D /* Nimble.framework.dSYM in Copy dSYMs */ = {isa = PBXBuildFile; fileRef = DC8BFB4A1C6377E10097F81D /* Nimble.framework.dSYM */; };
-		DC8BFB601C637B740097F81D /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB551C6379D80097F81D /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DC8BFB651C637F360097F81D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8BFB631C637F360097F81D /* AppDelegate.swift */; };
 		DC8BFB661C637F360097F81D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC8BFB641C637F360097F81D /* Assets.xcassets */; };
+		DC8BFB6A1C63D8760097F81D /* RepositoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8BFB691C63D8760097F81D /* RepositoryEntity.swift */; };
+		DC8BFB6E1C63D8900097F81D /* BuildEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8BFB6D1C63D8900097F81D /* BuildEntity.swift */; };
+		DC8BFB931C6960920097F81D /* RxSwift.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB561C6379D80097F81D /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC8BFB941C6960920097F81D /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB581C6379D80097F81D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC8BFB951C6960920097F81D /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB591C6379D80097F81D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC8BFB971C6961210097F81D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB591C6379D80097F81D /* Nimble.framework */; };
+		DC8BFB981C6961210097F81D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB581C6379D80097F81D /* Quick.framework */; };
+		DC8BFB9A1C6961210097F81D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB561C6379D80097F81D /* RxSwift.framework */; };
+		DC8BFB9D1C6966010097F81D /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8BFB9C1C6966010097F81D /* Dummy.swift */; };
+		DC8BFBAA1C69C47A0097F81D /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8BFBA91C69C47A0097F81D /* Networking.swift */; };
+		DC8BFBAC1C69C5E40097F81D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8BFBAB1C69C5E40097F81D /* Network.swift */; };
+		DC8BFBAD1C69CBE80097F81D /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB551C6379D80097F81D /* Swinject.framework */; };
+		DC8BFBB51C6A10FD0097F81D /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB551C6379D80097F81D /* Swinject.framework */; };
+		DC8BFBB61C6A11180097F81D /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB581C6379D80097F81D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC8BFBB71C6A11190097F81D /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB591C6379D80097F81D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC8BFBC01C6A148A0097F81D /* RxSwift.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB561C6379D80097F81D /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC8BFBC11C6A148B0097F81D /* RxCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB571C6379D80097F81D /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC8BFBC21C6A148B0097F81D /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB581C6379D80097F81D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC8BFBC31C6A148B0097F81D /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB591C6379D80097F81D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC8BFBC41C6A14BF0097F81D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB561C6379D80097F81D /* RxSwift.framework */; };
+		DC8BFBC51C6A14BF0097F81D /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB571C6379D80097F81D /* RxCocoa.framework */; };
+		DC8BFBC61C6A14BF0097F81D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB581C6379D80097F81D /* Quick.framework */; };
+		DC8BFBC71C6A14BF0097F81D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB591C6379D80097F81D /* Nimble.framework */; };
+		DC8BFBC91C6A152B0097F81D /* RxSwift.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB561C6379D80097F81D /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC8BFBCB1C6A152C0097F81D /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB581C6379D80097F81D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC8BFBCC1C6A152C0097F81D /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB591C6379D80097F81D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC8BFBCD1C6A15370097F81D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB561C6379D80097F81D /* RxSwift.framework */; };
+		DC8BFBCF1C6A15370097F81D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB581C6379D80097F81D /* Quick.framework */; };
+		DC8BFBD01C6A15370097F81D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB591C6379D80097F81D /* Nimble.framework */; };
+		DCA013641C6A884F00C85CC6 /* BuildTableViewModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2F552E1C6A7578006A4444 /* BuildTableViewModeling.swift */; };
+		DCA013651C6A884F00C85CC6 /* BuildTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2F55301C6A75AE006A4444 /* BuildTableViewModel.swift */; };
+		DCA0136B1C6AD45D00C85CC6 /* AppDelegateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA0136A1C6AD45D00C85CC6 /* AppDelegateSpec.swift */; };
+		DCA0136E1C6AD6A700C85CC6 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB591C6379D80097F81D /* Nimble.framework */; };
+		DCA0136F1C6AD6AA00C85CC6 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB581C6379D80097F81D /* Quick.framework */; };
+		DCA013701C6AD7EB00C85CC6 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB561C6379D80097F81D /* RxSwift.framework */; };
+		DCA013711C6AD7EF00C85CC6 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB571C6379D80097F81D /* RxCocoa.framework */; };
+		DCA013721C6AD80800C85CC6 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB561C6379D80097F81D /* RxSwift.framework */; };
+		DCA013731C6AD82E00C85CC6 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB561C6379D80097F81D /* RxSwift.framework */; };
+		DCA013751C6ADB2200C85CC6 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB571C6379D80097F81D /* RxCocoa.framework */; };
+		DCA013761C6ADB8C00C85CC6 /* RxCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB571C6379D80097F81D /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DCA013771C6ADBAD00C85CC6 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB571C6379D80097F81D /* RxCocoa.framework */; };
+		DCA013791C6AE25B00C85CC6 /* BuildTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA013781C6AE25B00C85CC6 /* BuildTableViewCellModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,7 +172,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DC8BFB601C637B740097F81D /* Swinject.framework in Embed Frameworks */,
 				DC8BFAB51C6354050097F81D /* TVModel.framework in Embed Frameworks */,
 				DC8BFAF91C6354240097F81D /* TVView.framework in Embed Frameworks */,
 				DC8BFAD71C6354120097F81D /* TVViewModel.framework in Embed Frameworks */,
@@ -129,6 +185,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				DC5E75E81C6BC73F004918AD /* RxBlocking.framework in Copy Frameworks */,
+				DCA013761C6ADB8C00C85CC6 /* RxCocoa.framework in Copy Frameworks */,
+				DC8BFB931C6960920097F81D /* RxSwift.framework in Copy Frameworks */,
+				DC8BFB941C6960920097F81D /* Quick.framework in Copy Frameworks */,
+				DC8BFB951C6960920097F81D /* Nimble.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +200,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				DC8BFBB61C6A11180097F81D /* Quick.framework in Copy Frameworks */,
+				DC8BFBB71C6A11190097F81D /* Nimble.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,6 +212,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				DC5E75EA1C6BC784004918AD /* RxBlocking.framework.dSYM in Copy dSYMs */,
 				DC8BFB501C63781F0097F81D /* Swinject.framework.dSYM in Copy dSYMs */,
 				DC8BFB511C63781F0097F81D /* RxSwift.framework.dSYM in Copy dSYMs */,
 				DC8BFB521C63781F0097F81D /* RxCocoa.framework.dSYM in Copy dSYMs */,
@@ -158,32 +222,73 @@
 			name = "Copy dSYMs";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC8BFBBF1C6A14730097F81D /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DC8BFBC01C6A148A0097F81D /* RxSwift.framework in Copy Frameworks */,
+				DC8BFBC11C6A148B0097F81D /* RxCocoa.framework in Copy Frameworks */,
+				DC8BFBC21C6A148B0097F81D /* Quick.framework in Copy Frameworks */,
+				DC8BFBC31C6A148B0097F81D /* Nimble.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC8BFBC81C6A150C0097F81D /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DC39F0A51C6C2917006C95A7 /* RxCocoa.framework in Copy Frameworks */,
+				DC39F0A41C6C28BF006C95A7 /* RxBlocking.framework in Copy Frameworks */,
+				DC8BFBC91C6A152B0097F81D /* RxSwift.framework in Copy Frameworks */,
+				DC8BFBCB1C6A152C0097F81D /* Quick.framework in Copy Frameworks */,
+				DC8BFBCC1C6A152C0097F81D /* Nimble.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DC2F55281C6A6D4F006A4444 /* BuildTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildTableViewController.swift; sourceTree = "<group>"; };
+		DC2F552A1C6A6D88006A4444 /* BuildTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildTableViewCell.swift; sourceTree = "<group>"; };
+		DC2F552C1C6A6DC6006A4444 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DC2F552E1C6A7578006A4444 /* BuildTableViewModeling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildTableViewModeling.swift; path = ../TVView/BuildTableViewModeling.swift; sourceTree = "<group>"; };
+		DC2F55301C6A75AE006A4444 /* BuildTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildTableViewModel.swift; path = ../TVView/BuildTableViewModel.swift; sourceTree = "<group>"; };
+		DC2F55321C6A77B0006A4444 /* BuildTableViewCellModeling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildTableViewCellModeling.swift; sourceTree = "<group>"; };
+		DC39F0A11C6C24AC006C95A7 /* BuildTableViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildTableViewModelSpec.swift; sourceTree = "<group>"; };
+		DC39F0A71C6C2B07006C95A7 /* BuildTableViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildTableViewControllerSpec.swift; sourceTree = "<group>"; };
+		DC39F0A91C6C314C006C95A7 /* RepositoryEntitySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryEntitySpec.swift; sourceTree = "<group>"; };
+		DC39F0AF1C6C3D86006C95A7 /* RepoTableViewModeling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewModeling.swift; sourceTree = "<group>"; };
+		DC39F0B11C6C3DF4006C95A7 /* RepoTableViewCellModeling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewCellModeling.swift; sourceTree = "<group>"; };
+		DC39F0B31C6C3F4A006C95A7 /* RepoTableViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewCellModel.swift; sourceTree = "<group>"; };
+		DC39F0B51C6C4070006C95A7 /* RepoTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewModel.swift; sourceTree = "<group>"; };
+		DC5E75DE1C6BBBC7004918AD /* RxTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTests.framework; path = Carthage/Build/iOS/RxTests.framework; sourceTree = "<group>"; };
+		DC5E75E01C6BBBD8004918AD /* RxTests.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxTests.framework.dSYM; path = Carthage/Build/iOS/RxTests.framework.dSYM; sourceTree = "<group>"; };
+		DC5E75E41C6BC722004918AD /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		DC8BFA321C63534C0097F81D /* TravisViewerIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravisViewerIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC8BFA3A1C63534C0097F81D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC8BFA3F1C63534C0097F81D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC8BFA461C63534C0097F81D /* TravisViewerIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravisViewerIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC8BFA4A1C63534C0097F81D /* TravisViewerIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravisViewerIOSTests.swift; sourceTree = "<group>"; };
 		DC8BFA4C1C63534C0097F81D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC8BFA9F1C6354050097F81D /* TVModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TVModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8BFAA11C6354050097F81D /* TVModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TVModel.h; sourceTree = "<group>"; };
 		DC8BFAA31C6354050097F81D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC8BFAA81C6354050097F81D /* TVModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC8BFAAF1C6354050097F81D /* TVModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVModelTests.swift; sourceTree = "<group>"; };
+		DC8BFAAF1C6354050097F81D /* BuildEntitySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildEntitySpec.swift; sourceTree = "<group>"; };
 		DC8BFAB11C6354050097F81D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC8BFAC11C6354120097F81D /* TVViewModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TVViewModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8BFAC31C6354120097F81D /* TVViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TVViewModel.h; sourceTree = "<group>"; };
 		DC8BFAC51C6354120097F81D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC8BFACA1C6354120097F81D /* TVViewModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVViewModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC8BFAD11C6354120097F81D /* TVViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVViewModelTests.swift; sourceTree = "<group>"; };
 		DC8BFAD31C6354120097F81D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC8BFAE31C6354230097F81D /* TVView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TVView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8BFAE51C6354240097F81D /* TVView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TVView.h; sourceTree = "<group>"; };
 		DC8BFAE71C6354240097F81D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC8BFAEC1C6354240097F81D /* TVViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC8BFAF31C6354240097F81D /* TVViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVViewTests.swift; sourceTree = "<group>"; };
 		DC8BFAF51C6354240097F81D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC8BFB461C6377E10097F81D /* Swinject.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Swinject.framework.dSYM; path = Carthage/Build/iOS/Swinject.framework.dSYM; sourceTree = "<group>"; };
 		DC8BFB471C6377E10097F81D /* RxSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxSwift.framework.dSYM; path = Carthage/Build/iOS/RxSwift.framework.dSYM; sourceTree = "<group>"; };
@@ -197,6 +302,15 @@
 		DC8BFB591C6379D80097F81D /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		DC8BFB631C637F360097F81D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC8BFB641C637F360097F81D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC8BFB691C63D8760097F81D /* RepositoryEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryEntity.swift; sourceTree = "<group>"; };
+		DC8BFB6D1C63D8900097F81D /* BuildEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildEntity.swift; sourceTree = "<group>"; };
+		DC8BFB9C1C6966010097F81D /* Dummy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
+		DC8BFBA91C69C47A0097F81D /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		DC8BFBAB1C69C5E40097F81D /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		DC8BFBAE1C69D7E10097F81D /* NetworkSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSpec.swift; sourceTree = "<group>"; };
+		DC8BFBD31C6A16380097F81D /* RxBlocking.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxBlocking.framework.dSYM; path = Carthage/Build/iOS/RxBlocking.framework.dSYM; sourceTree = "<group>"; };
+		DCA0136A1C6AD45D00C85CC6 /* AppDelegateSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateSpec.swift; sourceTree = "<group>"; };
+		DCA013781C6AE25B00C85CC6 /* BuildTableViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildTableViewCellModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +318,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC8BFBAD1C69CBE80097F81D /* Swinject.framework in Frameworks */,
 				DC8BFAB41C6354050097F81D /* TVModel.framework in Frameworks */,
 				DC8BFAF81C6354240097F81D /* TVView.framework in Frameworks */,
 				DC8BFAD61C6354120097F81D /* TVViewModel.framework in Frameworks */,
@@ -214,6 +329,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCA0136E1C6AD6A700C85CC6 /* Nimble.framework in Frameworks */,
+				DCA0136F1C6AD6AA00C85CC6 /* Quick.framework in Frameworks */,
+				DC8BFBB51C6A10FD0097F81D /* Swinject.framework in Frameworks */,
 				DC8BFB091C6355E00097F81D /* TVModel.framework in Frameworks */,
 				DC8BFB0A1C6355E00097F81D /* TVView.framework in Frameworks */,
 				DC8BFB0B1C6355E00097F81D /* TVViewModel.framework in Frameworks */,
@@ -224,6 +342,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCA013751C6ADB2200C85CC6 /* RxCocoa.framework in Frameworks */,
+				DCA013731C6AD82E00C85CC6 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +352,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC8BFAA91C6354050097F81D /* TVModel.framework in Frameworks */,
+				DCA013771C6ADBAD00C85CC6 /* RxCocoa.framework in Frameworks */,
+				DC8BFB9A1C6961210097F81D /* RxSwift.framework in Frameworks */,
+				DC5E75E61C6BC72B004918AD /* RxBlocking.framework in Frameworks */,
+				DC8BFB981C6961210097F81D /* Quick.framework in Frameworks */,
+				DC8BFB971C6961210097F81D /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +364,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCA013721C6AD80800C85CC6 /* RxSwift.framework in Frameworks */,
 				DC8BFB061C6355370097F81D /* TVModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +375,11 @@
 			files = (
 				DC8BFB071C6355C30097F81D /* TVModel.framework in Frameworks */,
 				DC8BFACB1C6354120097F81D /* TVViewModel.framework in Frameworks */,
+				DC39F0A31C6C28B8006C95A7 /* RxBlocking.framework in Frameworks */,
+				DC39F0A61C6C294C006C95A7 /* RxCocoa.framework in Frameworks */,
+				DC8BFBCD1C6A15370097F81D /* RxSwift.framework in Frameworks */,
+				DC8BFBCF1C6A15370097F81D /* Quick.framework in Frameworks */,
+				DC8BFBD01C6A15370097F81D /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +388,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC8BFB051C63552D0097F81D /* TVViewModel.framework in Frameworks */,
+				DCA013701C6AD7EB00C85CC6 /* RxSwift.framework in Frameworks */,
+				DCA013711C6AD7EF00C85CC6 /* RxCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +399,10 @@
 			files = (
 				DC8BFB081C6355CF0097F81D /* TVViewModel.framework in Frameworks */,
 				DC8BFAED1C6354240097F81D /* TVView.framework in Frameworks */,
+				DC8BFBC41C6A14BF0097F81D /* RxSwift.framework in Frameworks */,
+				DC8BFBC51C6A14BF0097F81D /* RxCocoa.framework in Frameworks */,
+				DC8BFBC61C6A14BF0097F81D /* Quick.framework in Frameworks */,
+				DC8BFBC71C6A14BF0097F81D /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +444,6 @@
 			children = (
 				DC8BFB631C637F360097F81D /* AppDelegate.swift */,
 				DC8BFB641C637F360097F81D /* Assets.xcassets */,
-				DC8BFA391C63534C0097F81D /* Main.storyboard */,
 				DC8BFA3E1C63534C0097F81D /* LaunchScreen.storyboard */,
 			);
 			path = TravisViewerIOS;
@@ -316,8 +452,8 @@
 		DC8BFA491C63534C0097F81D /* TravisViewerIOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				DC8BFA4A1C63534C0097F81D /* TravisViewerIOSTests.swift */,
 				DC8BFA4C1C63534C0097F81D /* Info.plist */,
+				DCA0136A1C6AD45D00C85CC6 /* AppDelegateSpec.swift */,
 			);
 			path = TravisViewerIOSTests;
 			sourceTree = "<group>";
@@ -327,6 +463,10 @@
 			children = (
 				DC8BFAA11C6354050097F81D /* TVModel.h */,
 				DC8BFAA31C6354050097F81D /* Info.plist */,
+				DC8BFB691C63D8760097F81D /* RepositoryEntity.swift */,
+				DC8BFB6D1C63D8900097F81D /* BuildEntity.swift */,
+				DC8BFBA91C69C47A0097F81D /* Networking.swift */,
+				DC8BFBAB1C69C5E40097F81D /* Network.swift */,
 			);
 			path = TVModel;
 			sourceTree = "<group>";
@@ -334,8 +474,11 @@
 		DC8BFAAE1C6354050097F81D /* TVModelTests */ = {
 			isa = PBXGroup;
 			children = (
-				DC8BFAAF1C6354050097F81D /* TVModelTests.swift */,
+				DC8BFAAF1C6354050097F81D /* BuildEntitySpec.swift */,
 				DC8BFAB11C6354050097F81D /* Info.plist */,
+				DC8BFB9C1C6966010097F81D /* Dummy.swift */,
+				DC8BFBAE1C69D7E10097F81D /* NetworkSpec.swift */,
+				DC39F0A91C6C314C006C95A7 /* RepositoryEntitySpec.swift */,
 			);
 			path = TVModelTests;
 			sourceTree = "<group>";
@@ -343,8 +486,16 @@
 		DC8BFAC21C6354120097F81D /* TVViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				DC2F552E1C6A7578006A4444 /* BuildTableViewModeling.swift */,
+				DC2F55301C6A75AE006A4444 /* BuildTableViewModel.swift */,
 				DC8BFAC31C6354120097F81D /* TVViewModel.h */,
 				DC8BFAC51C6354120097F81D /* Info.plist */,
+				DC2F55321C6A77B0006A4444 /* BuildTableViewCellModeling.swift */,
+				DCA013781C6AE25B00C85CC6 /* BuildTableViewCellModel.swift */,
+				DC39F0AF1C6C3D86006C95A7 /* RepoTableViewModeling.swift */,
+				DC39F0B11C6C3DF4006C95A7 /* RepoTableViewCellModeling.swift */,
+				DC39F0B31C6C3F4A006C95A7 /* RepoTableViewCellModel.swift */,
+				DC39F0B51C6C4070006C95A7 /* RepoTableViewModel.swift */,
 			);
 			path = TVViewModel;
 			sourceTree = "<group>";
@@ -352,8 +503,8 @@
 		DC8BFAD01C6354120097F81D /* TVViewModelTests */ = {
 			isa = PBXGroup;
 			children = (
-				DC8BFAD11C6354120097F81D /* TVViewModelTests.swift */,
 				DC8BFAD31C6354120097F81D /* Info.plist */,
+				DC39F0A11C6C24AC006C95A7 /* BuildTableViewModelSpec.swift */,
 			);
 			path = TVViewModelTests;
 			sourceTree = "<group>";
@@ -363,6 +514,9 @@
 			children = (
 				DC8BFAE51C6354240097F81D /* TVView.h */,
 				DC8BFAE71C6354240097F81D /* Info.plist */,
+				DC2F55281C6A6D4F006A4444 /* BuildTableViewController.swift */,
+				DC2F552A1C6A6D88006A4444 /* BuildTableViewCell.swift */,
+				DC2F552C1C6A6DC6006A4444 /* Main.storyboard */,
 			);
 			path = TVView;
 			sourceTree = "<group>";
@@ -370,8 +524,8 @@
 		DC8BFAF21C6354240097F81D /* TVViewTests */ = {
 			isa = PBXGroup;
 			children = (
-				DC8BFAF31C6354240097F81D /* TVViewTests.swift */,
 				DC8BFAF51C6354240097F81D /* Info.plist */,
+				DC39F0A71C6C2B07006C95A7 /* BuildTableViewControllerSpec.swift */,
 			);
 			path = TVViewTests;
 			sourceTree = "<group>";
@@ -389,6 +543,8 @@
 		DC8BFB0E1C635D7A0097F81D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC5E75E41C6BC722004918AD /* RxBlocking.framework */,
+				DC5E75DE1C6BBBC7004918AD /* RxTests.framework */,
 				DC8BFB551C6379D80097F81D /* Swinject.framework */,
 				DC8BFB561C6379D80097F81D /* RxSwift.framework */,
 				DC8BFB571C6379D80097F81D /* RxCocoa.framework */,
@@ -401,6 +557,8 @@
 		DC8BFB231C6361D60097F81D /* dSYMs */ = {
 			isa = PBXGroup;
 			children = (
+				DC5E75E01C6BBBD8004918AD /* RxTests.framework.dSYM */,
+				DC8BFBD31C6A16380097F81D /* RxBlocking.framework.dSYM */,
 				DC8BFB461C6377E10097F81D /* Swinject.framework.dSYM */,
 				DC8BFB471C6377E10097F81D /* RxSwift.framework.dSYM */,
 				DC8BFB481C6377E10097F81D /* RxCocoa.framework.dSYM */,
@@ -545,6 +703,7 @@
 				DC8BFAC61C6354120097F81D /* Sources */,
 				DC8BFAC71C6354120097F81D /* Frameworks */,
 				DC8BFAC81C6354120097F81D /* Resources */,
+				DC8BFBC81C6A150C0097F81D /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -582,6 +741,7 @@
 				DC8BFAE81C6354240097F81D /* Sources */,
 				DC8BFAE91C6354240097F81D /* Frameworks */,
 				DC8BFAEA1C6354240097F81D /* Resources */,
+				DC8BFBBF1C6A14730097F81D /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -661,8 +821,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC8BFA401C63534C0097F81D /* LaunchScreen.storyboard in Resources */,
+				DC5E75E11C6BBBD8004918AD /* RxTests.framework.dSYM in Resources */,
 				DC8BFB661C637F360097F81D /* Assets.xcassets in Resources */,
-				DC8BFA3B1C63534C0097F81D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -705,6 +865,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC2F552D1C6A6DC6006A4444 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -728,6 +889,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
 			);
 			name = "Run Script For Frameworks by Carthage";
 			outputPaths = (
@@ -751,7 +913,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC8BFA4B1C63534C0097F81D /* TravisViewerIOSTests.swift in Sources */,
+				DCA0136B1C6AD45D00C85CC6 /* AppDelegateSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -759,6 +921,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC8BFBAC1C69C5E40097F81D /* Network.swift in Sources */,
+				DC8BFB6E1C63D8900097F81D /* BuildEntity.swift in Sources */,
+				DC8BFB9D1C6966010097F81D /* Dummy.swift in Sources */,
+				DC8BFB6A1C63D8760097F81D /* RepositoryEntity.swift in Sources */,
+				DC8BFBAA1C69C47A0097F81D /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -766,7 +933,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC8BFAB01C6354050097F81D /* TVModelTests.swift in Sources */,
+				DC39F0AB1C6C3172006C95A7 /* RepositoryEntitySpec.swift in Sources */,
+				DC39F0AE1C6C3BFD006C95A7 /* NetworkSpec.swift in Sources */,
+				DC8BFAB01C6354050097F81D /* BuildEntitySpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -774,6 +943,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCA013791C6AE25B00C85CC6 /* BuildTableViewCellModel.swift in Sources */,
+				DC39F0B01C6C3D86006C95A7 /* RepoTableViewModeling.swift in Sources */,
+				DC39F0B21C6C3DF4006C95A7 /* RepoTableViewCellModeling.swift in Sources */,
+				DCA013641C6A884F00C85CC6 /* BuildTableViewModeling.swift in Sources */,
+				DC39F0B41C6C3F4A006C95A7 /* RepoTableViewCellModel.swift in Sources */,
+				DC39F0B61C6C4070006C95A7 /* RepoTableViewModel.swift in Sources */,
+				DCA013651C6A884F00C85CC6 /* BuildTableViewModel.swift in Sources */,
+				DC2F55331C6A77B0006A4444 /* BuildTableViewCellModeling.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -781,7 +958,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC8BFAD21C6354120097F81D /* TVViewModelTests.swift in Sources */,
+				DC39F0A21C6C24AC006C95A7 /* BuildTableViewModelSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -789,6 +966,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC2F552B1C6A6D88006A4444 /* BuildTableViewCell.swift in Sources */,
+				DC2F55291C6A6D4F006A4444 /* BuildTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -796,7 +975,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC8BFAF41C6354240097F81D /* TVViewTests.swift in Sources */,
+				DC39F0A81C6C2B07006C95A7 /* BuildTableViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -851,14 +1030,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DC8BFA391C63534C0097F81D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DC8BFA3A1C63534C0097F81D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DC8BFA3E1C63534C0097F81D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -956,11 +1127,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TravisViewerIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.TravisViewerIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -969,10 +1146,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TravisViewerIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.TravisViewerIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -980,10 +1163,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TravisViewerIOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.TravisViewerIOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravisViewerIOS.app/TravisViewerIOS";
 			};
 			name = Debug;
@@ -992,6 +1181,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TravisViewerIOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.TravisViewerIOSTests;
@@ -1003,17 +1197,23 @@
 		DC8BFAB71C6354050097F81D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TVModel/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.TVModel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1023,11 +1223,16 @@
 		DC8BFAB81C6354050097F81D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TVModel/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1043,6 +1248,10 @@
 		DC8BFABA1C6354050097F81D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TVModelTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.TVModelTests;
@@ -1053,6 +1262,10 @@
 		DC8BFABB1C6354050097F81D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TVModelTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.TVModelTests;
@@ -1063,17 +1276,23 @@
 		DC8BFAD91C6354120097F81D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TVViewModel/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.TVViewModel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1083,11 +1302,16 @@
 		DC8BFADA1C6354120097F81D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TVViewModel/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1103,16 +1327,27 @@
 		DC8BFADC1C6354120097F81D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TVViewModelTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.TVViewModelTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		DC8BFADD1C6354120097F81D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TVViewModelTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.TVViewModelTests;
@@ -1123,17 +1358,23 @@
 		DC8BFAFB1C6354240097F81D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TVView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.TVView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1143,11 +1384,16 @@
 		DC8BFAFC1C6354240097F81D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TVView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1163,16 +1409,27 @@
 		DC8BFAFE1C6354240097F81D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TVViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.TVViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		DC8BFAFF1C6354240097F81D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TVViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.TVViewTests;

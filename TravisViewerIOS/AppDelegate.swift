@@ -1,12 +1,41 @@
 import UIKit
 
+import Swinject
+import TVModel
+import TVView
+import TVViewModel
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
+    let container = Container() { container in
+        // Models
+        container.register(Networking.self) { _ in Network(URLSession: NSURLSession.sharedSession())}
+        
+        // View models
+        container.register(BuildTableViewModeling.self) { r
+            in BuildTableViewModel(network: r.resolve(Networking.self)!)
+        }
+        
+        // Views
+        container.registerForStoryboard(BuildTableViewController.self) {
+            r, c in
+            c.viewModel = r.resolve(BuildTableViewModeling.self)!
+        }
+    }
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        let window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window.backgroundColor = UIColor.whiteColor()
+        window.makeKeyAndVisible()
+        self.window = window
+        
+        let bundle = NSBundle(forClass: BuildTableViewController.self)
+        let storyboard = SwinjectStoryboard.create(name: "Main", bundle: bundle, container: container)
+        window.rootViewController = storyboard.instantiateInitialViewController()
+        
         return true
     }
     
