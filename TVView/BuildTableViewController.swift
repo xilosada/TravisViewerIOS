@@ -10,23 +10,24 @@ import UIKit
 import TVViewModel
 
 import RxSwift
+import Swinject
 
 public final class BuildTableViewController: UITableViewController {
 
-    private var autoSearchStarted = false
-
+    var repoSlug: String?
+    
     let disposeBag = DisposeBag()
     
-    public var viewModel: BuildTableViewModeling? {
-        didSet {
-            if let viewModel = viewModel {
-                viewModel.loadBuilds("xilosada/BitcoinFinder").observeOn(MainScheduler.instance)
-                    .bindTo(tableView.rx_itemsWithCellIdentifier("BuildTableViewCell", cellType: BuildTableViewCell.self)) {
-                        (_, viewModel, cell) in
+    public var viewModel: BuildTableViewModeling?
+
+    public override func viewDidLoad() {
+        if let viewModel = viewModel {
+            viewModel.loadBuilds(repoSlug!).observeOn(MainScheduler.instance)
+                .bindTo(tableView.rx_itemsWithCellIdentifier("BuildTableViewCell", cellType: BuildTableViewCell.self)) { _, viewModel, cell in
                         cell.viewModel = viewModel
                     }
-                    .addDisposableTo(disposeBag)
-            }
+                .addDisposableTo(disposeBag)
         }
     }
+    
 }

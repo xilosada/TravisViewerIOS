@@ -8,7 +8,7 @@
         <!--Travis Builds-->
         <scene sceneID="A5I-xx-0dC">
             <objects>
-                <tableViewController storyboardIdentifier="BuildTableViewController" id="nDB-fh-ZBa" customClass="BuildTableViewController" customModule="TVView" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="BuildTableViewController" clearsSelectionOnViewWillAppear="NO" id="nDB-fh-ZBa" customClass="BuildTableViewController" customModule="TVView" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="56" sectionHeaderHeight="28" sectionFooterHeight="28" id="dNE-Ih-ixg">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,7 +57,57 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MxL-EO-xDC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="165" y="238"/>
+            <point key="canvasLocation" x="777" y="238"/>
+        </scene>
+        <!--Repos-->
+        <scene sceneID="OPl-qJ-lf9">
+            <objects>
+                <tableViewController storyboardIdentifier="RepoTableViewController" id="j7q-CO-uVb" customClass="RepoTableViewController" customModule="TVView" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="hAA-tI-4pw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RepoTableViewCell" id="EiS-Gd-xd1" customClass="RepoTableViewCell" customModule="TVView" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EiS-Gd-xd1" id="Kvl-8Z-gcK">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1HI-IS-icY">
+                                            <rect key="frame" x="34" y="0.0" width="532" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIE-Ah-Uez">
+                                            <rect key="frame" x="34" y="22" width="532" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="IIE-Ah-Uez" id="Sp6-Dv-96x"/>
+                                    <outlet property="nameLabel" destination="1HI-IS-icY" id="eUb-ff-gCS"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="j7q-CO-uVb" id="WOL-Xf-jOz"/>
+                            <outlet property="delegate" destination="j7q-CO-uVb" id="QKX-np-qcj"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Repos" id="70X-sI-H32"/>
+                    <connections>
+                        <segue destination="nDB-fh-ZBa" kind="show" identifier="showBuilds" id="2xG-ni-xIs"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UGp-eR-mOE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40" y="238"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2uu-xe-QtH">
@@ -68,7 +118,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="nDB-fh-ZBa" kind="relationship" relationship="rootViewController" id="65t-QQ-94G"/>
+                        <segue destination="j7q-CO-uVb" kind="relationship" relationship="rootViewController" id="E5Y-ho-Wbz"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KRu-DK-IdK" userLabel="First Responder" sceneMemberID="firstResponder"/>

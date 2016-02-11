@@ -14,7 +14,7 @@ import TVViewModel
 
 @testable import TVView
 
-class ImageSearchTableViewControllerSpec: QuickSpec {
+class BuildTableViewControllerSpec: QuickSpec {
     // MARK: Mock
     class MockViewModel: BuildTableViewModeling {
         var startSearchCallCount = 0

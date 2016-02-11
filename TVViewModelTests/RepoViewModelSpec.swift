@@ -1,8 +1,8 @@
 //
-//  BuildTableViewModelSpec.swift
+//  RepoViewModelSpec.swift
 //  TravisViewerIOS
 //
-//  Created by X.I. Losada on 10/02/16.
+//  Created by X.I. Losada on 11/02/16.
 //  Copyright © 2016 XiLosada. All rights reserved.
 //
 
@@ -14,17 +14,17 @@ import RxBlocking
 @testable import TVModel
 @testable import TVViewModel
 
-class BuildTableViewModelSpec: QuickSpec {
+class RepoTableViewModelSpec: QuickSpec {
     
     // MARK: - Spec
     override func spec() {
-        var viewModel: BuildTableViewModel!
+        var viewModel: RepoTableViewModel!
         beforeEach {
-            viewModel =  BuildTableViewModel(network: StubNetwork())
+            viewModel =  RepoTableViewModel(network: StubNetwork())
         }
         describe("Constructor"){
             it("Constructor happy case works fine"){
-                let builds = try! viewModel.loadBuilds("test").toBlocking().first()
+                let builds = try! viewModel.loadRepos("test").toBlocking().first()
                 expect(builds).toNot(beNil())
                 expect(builds!.count).to(beGreaterThan(0))
             }

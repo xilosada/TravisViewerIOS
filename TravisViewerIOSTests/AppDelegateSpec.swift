@@ -29,6 +29,9 @@ class AppDelegateSpec: QuickSpec {
                 // ViewModels
                 expect(container.resolve(BuildTableViewModeling.self))
                     .notTo(beNil())
+                
+                expect(container.resolve(RepoTableViewModeling.self))
+                    .notTo(beNil())
             }
             it("injects view models to views.") {
                 let bundle = NSBundle(forClass: BuildTableViewController.self)

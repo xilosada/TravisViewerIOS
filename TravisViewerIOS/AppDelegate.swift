@@ -19,10 +19,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             in BuildTableViewModel(network: r.resolve(Networking.self)!)
         }
         
+        container.register(RepoTableViewModeling.self) { r
+            in RepoTableViewModel(network: r.resolve(Networking.self)!)
+        }
+        
         // Views
         container.registerForStoryboard(BuildTableViewController.self) {
             r, c in
             c.viewModel = r.resolve(BuildTableViewModeling.self)!
+        }
+        
+        container.registerForStoryboard(RepoTableViewController.self) {
+            r, c in
+            c.viewModel = r.resolve(RepoTableViewModeling.self)!
         }
     }
     

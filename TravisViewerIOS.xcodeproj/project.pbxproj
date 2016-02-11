@@ -97,6 +97,10 @@
 		DCA013761C6ADB8C00C85CC6 /* RxCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB571C6379D80097F81D /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DCA013771C6ADBAD00C85CC6 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB571C6379D80097F81D /* RxCocoa.framework */; };
 		DCA013791C6AE25B00C85CC6 /* BuildTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA013781C6AE25B00C85CC6 /* BuildTableViewCellModel.swift */; };
+		DCCEE4D11C6C499A00E7345B /* RepoViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEE4CD1C6C46EF00E7345B /* RepoViewModelSpec.swift */; };
+		DCCEE4D21C6C4A2200E7345B /* StubNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEE4CF1C6C474000E7345B /* StubNetwork.swift */; };
+		DCCEE4D41C6C4BF900E7345B /* RepoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEE4D31C6C4BF900E7345B /* RepoTableViewController.swift */; };
+		DCCEE4D61C6C4C7400E7345B /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEE4D51C6C4C7400E7345B /* RepoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -311,6 +315,10 @@
 		DC8BFBD31C6A16380097F81D /* RxBlocking.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxBlocking.framework.dSYM; path = Carthage/Build/iOS/RxBlocking.framework.dSYM; sourceTree = "<group>"; };
 		DCA0136A1C6AD45D00C85CC6 /* AppDelegateSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateSpec.swift; sourceTree = "<group>"; };
 		DCA013781C6AE25B00C85CC6 /* BuildTableViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildTableViewCellModel.swift; sourceTree = "<group>"; };
+		DCCEE4CD1C6C46EF00E7345B /* RepoViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoViewModelSpec.swift; sourceTree = "<group>"; };
+		DCCEE4CF1C6C474000E7345B /* StubNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubNetwork.swift; sourceTree = "<group>"; };
+		DCCEE4D31C6C4BF900E7345B /* RepoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewController.swift; sourceTree = "<group>"; };
+		DCCEE4D51C6C4C7400E7345B /* RepoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -505,6 +513,8 @@
 			children = (
 				DC8BFAD31C6354120097F81D /* Info.plist */,
 				DC39F0A11C6C24AC006C95A7 /* BuildTableViewModelSpec.swift */,
+				DCCEE4CD1C6C46EF00E7345B /* RepoViewModelSpec.swift */,
+				DCCEE4CF1C6C474000E7345B /* StubNetwork.swift */,
 			);
 			path = TVViewModelTests;
 			sourceTree = "<group>";
@@ -517,6 +527,8 @@
 				DC2F55281C6A6D4F006A4444 /* BuildTableViewController.swift */,
 				DC2F552A1C6A6D88006A4444 /* BuildTableViewCell.swift */,
 				DC2F552C1C6A6DC6006A4444 /* Main.storyboard */,
+				DCCEE4D31C6C4BF900E7345B /* RepoTableViewController.swift */,
+				DCCEE4D51C6C4C7400E7345B /* RepoTableViewCell.swift */,
 			);
 			path = TVView;
 			sourceTree = "<group>";
@@ -959,6 +971,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC39F0A21C6C24AC006C95A7 /* BuildTableViewModelSpec.swift in Sources */,
+				DCCEE4D11C6C499A00E7345B /* RepoViewModelSpec.swift in Sources */,
+				DCCEE4D21C6C4A2200E7345B /* StubNetwork.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -967,7 +981,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC2F552B1C6A6D88006A4444 /* BuildTableViewCell.swift in Sources */,
+				DCCEE4D41C6C4BF900E7345B /* RepoTableViewController.swift in Sources */,
 				DC2F55291C6A6D4F006A4444 /* BuildTableViewController.swift in Sources */,
+				DCCEE4D61C6C4C7400E7345B /* RepoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
