@@ -39,9 +39,10 @@ class BuildTableViewControllerSpec: QuickSpec {
 
             expect(viewController).toNot(beNil())
             
+            viewController.repoSlug = "octocat"
             viewController.viewModel = viewModel
             
-            expect(viewModel.startSearchCallCount) == 1
+            expect(viewModel.startSearchCallCount) == 0
             viewController.viewWillAppear(true)
             expect(viewModel.startSearchCallCount) == 1
         }

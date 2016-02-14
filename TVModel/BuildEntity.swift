@@ -12,7 +12,7 @@ public struct BuildEntity{
     public let message: String
     public let branch: String
     public let status: StatusCode
-    
+        
     init(number: String, message: String, branch: String, status: StatusCode){
         self.number = number
         self.message = message

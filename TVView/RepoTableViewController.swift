@@ -12,20 +12,20 @@ import TVViewModel
 
 import RxSwift
 
-public final class RepoTableViewController: UITableViewController {
+public final class RepoTableViewController:UITableViewController {
+    
+    public var viewModel: RepoTableViewModeling!
     
     let disposeBag = DisposeBag()
-    
-    
-    public var viewModel: RepoTableViewModeling? {
+
+    public var repoName: String?{
         didSet {
             if let viewModel = viewModel {
-                viewModel.loadRepos("xilosada").observeOn(MainScheduler.instance)
+                viewModel.loadRepos(repoName!).observeOn(MainScheduler.instance)
                     .bindTo(tableView.rx_itemsWithCellIdentifier("RepoTableViewCell", cellType: RepoTableViewCell.self)) {
                         (_, viewModel, cell) in
                         cell.viewModel = viewModel
-                    }
-                    .addDisposableTo(disposeBag)
+                }.addDisposableTo(disposeBag)
             }
         }
     }

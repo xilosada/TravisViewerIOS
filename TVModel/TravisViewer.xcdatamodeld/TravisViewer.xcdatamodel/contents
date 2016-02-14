@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Xcode 7.0">
+    <entity name="Build" representedClassName="TVModel.Build" syncable="YES">
+        <attribute name="branch" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="repo" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Repo" inverseName="builds" inverseEntity="Repo" syncable="YES"/>
+    </entity>
+    <entity name="Repo" representedClassName="TVModel.Repo" syncable="YES">
+        <attribute name="descr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="slug" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="builds" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Build" inverseName="repo" inverseEntity="Build" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="repo" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="TVModel.User" syncable="YES">
+        <attribute name="avatarUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="repo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Repo" inverseName="user" inverseEntity="Repo" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="User" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Build" positionX="-54" positionY="0" width="128" height="120"/>
+        <element name="Repo" positionX="-36" positionY="9" width="128" height="120"/>
+    </elements>
+</model>

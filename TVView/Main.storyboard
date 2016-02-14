@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Travis Builds-->
@@ -109,6 +110,48 @@
             </objects>
             <point key="canvasLocation" x="40" y="238"/>
         </scene>
+        <!--User Search-->
+        <scene sceneID="Zk1-Jh-eQE">
+            <objects>
+                <viewController title="User Search" id="6jR-4K-xHW" customClass="UserSearchViewController" customModule="TVView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MPS-x2-S4f"/>
+                        <viewControllerLayoutGuide type="bottom" id="te3-sE-ZQE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4a9-WN-yKG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i8n-pb-yHk">
+                                <rect key="frame" x="110" y="207" width="423" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFh-kt-Uuz">
+                                <rect key="frame" x="298" y="493" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i8n-pb-yHk" firstAttribute="leading" secondItem="4a9-WN-yKG" secondAttribute="leadingMargin" constant="90" id="LWR-OF-3dP"/>
+                            <constraint firstItem="i8n-pb-yHk" firstAttribute="centerX" secondItem="pFh-kt-Uuz" secondAttribute="centerX" id="kaM-du-9Wl"/>
+                            <constraint firstItem="i8n-pb-yHk" firstAttribute="top" secondItem="MPS-x2-S4f" secondAttribute="bottom" constant="143" id="sjC-Ru-WVq"/>
+                            <constraint firstItem="te3-sE-ZQE" firstAttribute="top" secondItem="pFh-kt-Uuz" secondAttribute="bottom" constant="77" id="uVd-Re-Y9T"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="i8n-pb-yHk" secondAttribute="trailing" constant="47" id="yY0-EK-7xW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jjy-p6-SZb"/>
+                    <connections>
+                        <outlet property="reposButton" destination="pFh-kt-Uuz" id="k3l-VL-jVp"/>
+                        <outlet property="searchField" destination="i8n-pb-yHk" id="YeN-HZ-u9K"/>
+                        <segue destination="j7q-CO-uVb" kind="show" identifier="showRepo" id="JRd-rb-5qh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="33z-t2-gek" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-341" y="-423"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="2uu-xe-QtH">
             <objects>
@@ -118,12 +161,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="j7q-CO-uVb" kind="relationship" relationship="rootViewController" id="E5Y-ho-Wbz"/>
+                        <segue destination="6jR-4K-xHW" kind="relationship" relationship="rootViewController" id="1C5-Ag-hkn"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KRu-DK-IdK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-655" y="238"/>
+            <point key="canvasLocation" x="-645" y="281"/>
         </scene>
     </scenes>
 </document>

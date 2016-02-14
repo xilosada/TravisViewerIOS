@@ -14,6 +14,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Models
         container.register(Networking.self) { _ in Network(URLSession: NSURLSession.sharedSession())}
         
+        container.register(DiskStoraging.self) { _ in DiskStorage(cdsManager:CoreDataStackManager.instance)}
+
+        container.register(Storaging.self) { r in
+            Storage(diskStorage: r.resolve(DiskStoraging.self)!, cloudStorage: r.resolve(Networking.self)!)
+        }
+        
         // View models
         container.register(BuildTableViewModeling.self) { r
             in BuildTableViewModel(network: r.resolve(Networking.self)!)
@@ -21,6 +27,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         container.register(RepoTableViewModeling.self) { r
             in RepoTableViewModel(network: r.resolve(Networking.self)!)
+        }
+        
+        container.register(UserSearchViewModeling.self){ r
+            in UserSearchViewModel(storage: r.resolve(Storaging.self)!)
         }
         
         // Views
@@ -32,6 +42,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         container.registerForStoryboard(RepoTableViewController.self) {
             r, c in
             c.viewModel = r.resolve(RepoTableViewModeling.self)!
+        }
+        
+        container.registerForStoryboard(UserSearchViewController.self) {
+            r, c in
+            c.viewModel = r.resolve(UserSearchViewModeling.self)!
         }
     }
     
@@ -68,6 +83,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        CoreDataStackManager.instance.saveContext()
     }
     
 }

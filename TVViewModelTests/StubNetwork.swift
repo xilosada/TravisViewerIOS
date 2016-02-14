@@ -14,7 +14,7 @@ public class StubNetwork: Networking {
     
     init(){}
     
-    public func requestBuilds(repoName: String) -> Observable<[BuildEntity]>{
+    public func requestBuilds(repositoryName: String) -> Observable<[BuildEntity]>{
 
         let buildEntity1 = BuildEntity(number: "3", message: "m1", branch: "feature", status: .Errored)
         let buildEntity2 = BuildEntity(number: "2", message: "m2", branch: "master", status: .Passed)
@@ -29,5 +29,10 @@ public class StubNetwork: Networking {
         let repoEntity3 = RepositoryEntity(id: 3, slug: "anybody/lowrarar", description: "testing 3")
         
         return Observable.just([repoEntity1, repoEntity2, repoEntity3])
+    }
+    
+    public func searchUser(username: String) -> Observable<UserEntity> {
+        let user = UserEntity(name: "octocat", avatarUrl: "http://dfgddgd")
+        return Observable.just(user)
     }
 }

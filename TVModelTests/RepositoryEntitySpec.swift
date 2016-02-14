@@ -22,7 +22,7 @@ public class RepositoryEntitySpec: QuickSpec {
                 expect(repo.description).to(equal("description"))
             }
             
-            it("static mapper builds repository arrays from JSON") {
+            it("static mapper builds an array of repositories from a JSON Array") {
                 let repos = try! RepositoryEntity.Mapper.parseJSONArray(Dummy.dummyRepositoriesJSON)
                 expect(repos).toNot(beNil())
                 expect(repos.count).to(beGreaterThan(0))

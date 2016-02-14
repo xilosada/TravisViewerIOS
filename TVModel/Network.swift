@@ -37,6 +37,7 @@ public final class Network: Networking {
     }
     
     public func requestRepositories(username: String) -> Observable<[RepositoryEntity]> {
+        
         let urlContent = "https://api.travis-ci.org/repos/\(username)"
         let url = NSURL(string: urlContent)!
         return rx_JSON(url).map{
@@ -47,6 +48,16 @@ public final class Network: Networking {
             } catch {
                 return []
             }
+        }
+    }
+    
+    
+    public func searchUser(username: String) -> Observable<UserEntity> {
+        let urlContent = "https://api.github.com/users/\(username)"
+        let url = NSURL(string: urlContent.stringByAddingPercentEncodingWithAllowedCharacters(.URLQueryAllowedCharacterSet())!)!
+        return rx_JSON(url).map{
+            json in
+            return UserEntity(dictionary:json as! [String:AnyObject])!
         }
     }
 
