@@ -18,7 +18,10 @@ public class UserSearchViewController:  UIViewController {
     
     public var viewModel: UserSearchViewModeling?
     
+    private weak var userField: UserTextField!
+    
     public override func viewDidLoad() {
+        userField = UserTextField.toUserTextField(searchField)
         configureEditText()
         configureReposButton()
         setInitialUI()
@@ -37,7 +40,6 @@ public class UserSearchViewController:  UIViewController {
     }
     
     func configureEditText() {
-        
         searchField.autocorrectionType = UITextAutocorrectionType.No
         searchField.rx_text
             .throttle(0.3, scheduler: MainScheduler.instance)
@@ -49,11 +51,11 @@ public class UserSearchViewController:  UIViewController {
             })
             .subscribeOn(Dependencies.sharedDependencies.backgroundWorkScheduler)
             .observeOn(Dependencies.sharedDependencies.mainScheduler)
-            .subscribeNext{ self.queryServer($0)}
+            .subscribeNext{ self.getUser($0)}
             .addDisposableTo(disposeBag)
     }
     
-    func queryServer(username:String) {
+    func getUser(username:String) {
         self.viewModel!.searchUser(username)
             .subscribeOn(Dependencies.sharedDependencies.backgroundWorkScheduler)
             .observeOn(Dependencies.sharedDependencies.mainScheduler)
@@ -68,10 +70,8 @@ public class UserSearchViewController:  UIViewController {
     func renderError(error:ErrorType) -> Void{
         if(error._domain == NSURLErrorDomain){
             NetworkAlert.showErrorAlert(self, onClosed: configureEditText)
-            searchField.text = ""
+            userField.resetView()
         }
-        print(error)
-
         setErrorResult()
     }
 
@@ -90,7 +90,7 @@ public class UserSearchViewController:  UIViewController {
         }
     }
     
-    @IBOutlet weak var searchField: UITextField!
+    @IBOutlet weak var searchField: UserTextField!
     
     @IBOutlet weak var reposButton: UIButton!
     
@@ -100,9 +100,7 @@ public class UserSearchViewController:  UIViewController {
     
     private func showRepoList(username: String) {
         self.performSegueWithIdentifier("showRepo", sender: username)
-
     }
-    
     
     private func setModel(model:UserSearchResultModeling){
         if model.numberOfRepos > 0 {
@@ -129,25 +127,16 @@ public class UserSearchViewController:  UIViewController {
         activityIndicator.hidden = true
         activityIndicator.stopAnimating()
         numberOfReposLabel.hidden = false
-        searchField.backgroundColor = result ? ColorPalette.primary_lightColor: ColorPalette.accentColor
-        searchField.layer.borderColor = result ? ColorPalette.primary_darkColor.CGColor: ColorPalette.iconsColor.CGColor
-        searchField.layer.borderWidth = 2.0
+        userField.setResult(result)
     }
     
     private func searching(){
         activityIndicator.hidden = false
         activityIndicator.startAnimating()
         numberOfReposLabel.hidden = true
-        searchField.backgroundColor=UIColor.whiteColor()
         reposButton.enabled=false
-        searchField.layer.cornerRadius = 1.0
-        searchField.layer.borderColor = UIColor.grayColor().CGColor
+        userField.resetView()
         resetReposLabel()
-    }
-    
-    private func setBorder() {
-        searchField.layer.cornerRadius = 8.0
-        searchField.layer.masksToBounds = true
     }
     
     
