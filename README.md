@@ -1,4 +1,4 @@
-# TravisViewerIos 
+# TravisViewerIos build: ![image](https://travis-ci.org/xilosada/TravisViewerIOS.svg?branch=master)
 
 This application allows you to view all builds of public repos on Travis-CI.
 1. Enter the username in the TextField.
