@@ -22,11 +22,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // View models
         container.register(BuildTableViewModeling.self) { r
-            in BuildTableViewModel(network: r.resolve(Networking.self)!)
+            in BuildTableViewModel(storage: r.resolve(Storaging.self)!)
         }
         
         container.register(RepoTableViewModeling.self) { r
-            in RepoTableViewModel(network: r.resolve(Networking.self)!)
+            in RepoTableViewModel(storage: r.resolve(Storaging.self)!)
         }
         
         container.register(UserSearchViewModeling.self){ r

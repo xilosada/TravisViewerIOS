@@ -15,38 +15,57 @@ public class Storage: Storaging {
     
     private let disposeBag: DisposeBag = DisposeBag()
     
-    public init(diskStorage: DiskStoraging, cloudStorage: Networking){
-        self.diskStorage = diskStorage
-        self.cloudStorage = cloudStorage
-    }
+    private var cachedUser: UserEntity?
     
     private enum Errors: ErrorType {
         case InvalidQueryLength
     }
     
+    public init(diskStorage: DiskStoraging, cloudStorage: Networking){
+        self.diskStorage = diskStorage
+        self.cloudStorage = cloudStorage
+    }
+    
     public func getUser(username:String) -> Observable<UserEntity>{
-        /*return diskStorage.loadUser(username).catchError({ (error) -> Observable<UserEntity> in
-            return self.downloadAndSaveUser(username)
-        })*/
-        return self.downloadAndSaveUser(username)
-    }
-    private func downloadAndSaveUser(username: String) -> Observable<UserEntity> {
-        return downloadUser(username).map{
-            user in
-            self.saveUserEntity(user)
+        print(username)
+        if let user = cachedUser {
+            if user.name == username {
+                return Observable.just(user)
+            }
         }
+        return getUserAfterFlush(username)
+    }
     
-    
-        //return saveUserEntity(downloadUser(username))
+    private func getUserAfterFlush(username:String) -> Observable<UserEntity>{
+        diskStorage.flushDb().subscribe().dispose()
+        return self.getUserInternal(username)
     }
     
     
-    private func saveUserEntity(user: UserEntity) -> UserEntity {
-        let _ = user.parseToDBO()
-        try! CoreDataStackManager.instance.managedObjectContext.save()
-        return user
+    private func getUserInternal(username:String) -> Observable<UserEntity>{
+        return diskStorage.loadUser(username).catchError{ (error) -> Observable<UserEntity> in
+            self.downloadAndSaveUser(username)
+        }
     }
     
+    public func getRepos(username:String) -> Observable<[RepositoryEntity]>{
+        return getUserInternal(username).map{
+            $0.repos
+        }
+    }
+    
+    public func getBuilds(repoId:Int) -> Observable<[BuildEntity]>{
+        return diskStorage.loadRepo(repoId).map{
+            $0.builds
+        }
+    }
+    
+    private func downloadAndSaveUser(username: String) -> Observable<UserEntity> {
+        return downloadUser(username).flatMap{ (user) -> Observable<UserEntity>  in
+            self.cachedUser = user
+            return self.saveUserEntity(user)
+        }
+    }
     
     private func downloadUser(username:String) -> Observable<UserEntity> {
         return Observable.zip(cloudStorage.searchUser(username), downloadRepos(username), resultSelector: {
@@ -56,7 +75,11 @@ public class Storage: Storaging {
                 return userCopy
             })
     }
-
+    
+    private func saveUserEntity(user: UserEntity) -> Observable<UserEntity> {
+        return diskStorage.saveUser(user).map{ _ in user }
+    }
+    
     private func downloadRepos(username:String) -> Observable<[RepositoryEntity]> {
         return downloadBuilds(fromObservableArrayToObservable(cloudStorage.requestRepositories(username))).toArray()
     }
@@ -66,11 +89,6 @@ public class Storage: Storaging {
             return array.toObservable()
         }
     }
-
-
-
-
-    
     
     private func downloadBuilds(repoObservable: Observable<RepositoryEntity>) -> Observable<RepositoryEntity> {
         return repoObservable
@@ -84,6 +102,5 @@ public class Storage: Storaging {
                 })
             }
     }
-
 
 }

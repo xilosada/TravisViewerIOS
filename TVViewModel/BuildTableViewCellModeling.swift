@@ -11,4 +11,5 @@ public protocol BuildTableViewCellModeling {
     var number: String { get }
     var branchText: String { get }
     var statusText: String { get }
+    var result: Bool { get }
 }

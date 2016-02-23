@@ -5,16 +5,15 @@
 //  Created by X.I. Losada on 13/02/16.
 //  Copyright © 2016 XiLosada. All rights reserved.
 //
-import Foundation
+import CoreData
 
 extension RepositoryEntity {
     
-    func parseToDBO() -> Repo {
-        let repo = Repo(id: id, slug: slug, description: description, context:CoreDataStackManager.instance.managedObjectContext)
-        var buildList = [Build]()
-        builds.forEach{ buildList.append( $0.parseToDBO() )}
-        repo.builds = NSSet(array:  buildList)
-        return repo
+    func parseToDBO(context: NSManagedObjectContext)-> Repo {
+        let dbRepo = Repo(id: id, slug: slug, description: description, context: context)
+        let dbBuilds = NSOrderedSet(array: builds.map{ $0.parseToDBO(context) })
+        dbRepo.builds = dbBuilds
+        return dbRepo
     }
 
 }

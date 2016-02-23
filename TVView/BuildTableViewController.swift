@@ -9,12 +9,12 @@
 import UIKit
 import TVViewModel
 
+import RxCocoa
 import RxSwift
-import Swinject
 
 public final class BuildTableViewController: UITableViewController {
 
-    var repoSlug: String?
+    var repoId: Int?
     
     let disposeBag = DisposeBag()
     
@@ -22,7 +22,7 @@ public final class BuildTableViewController: UITableViewController {
 
     public override func viewDidLoad() {
         if let viewModel = viewModel {
-            viewModel.loadBuilds(repoSlug!).observeOn(MainScheduler.instance)
+            viewModel.getBuilds(repoId!).observeOn(MainScheduler.instance)
                 .bindTo(tableView.rx_itemsWithCellIdentifier("BuildTableViewCell", cellType: BuildTableViewCell.self)) { _, viewModel, cell in
                         cell.viewModel = viewModel
                     }

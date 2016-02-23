@@ -10,16 +10,16 @@ import TVModel
 import RxSwift
 
 public final class BuildTableViewModel: BuildTableViewModeling {
-        
-    private let network: Networking
     
-    public init(network: Networking) {
-        self.network = network
+    private let storage: Storaging!
+    
+    public init(storage: Storaging) {
+        self.storage = storage
     }
     
-    public func loadBuilds(repoName: String) -> Observable<[BuildTableViewCellModeling]> {
-        return network.requestBuilds(repoName).map{
-            $0.flatMap{ BuildTableViewCellModel(build: $0) as BuildTableViewCellModeling}
+    public func getBuilds(repoId: Int) -> Observable<[BuildTableViewCellModeling]> {
+        return storage.getBuilds(repoId).map{
+            $0.flatMap{ BuildTableViewCellModel(build: $0) as BuildTableViewCellModeling }
+            }
         }
     }
-}

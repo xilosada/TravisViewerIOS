@@ -11,4 +11,7 @@ import RxSwift
 public protocol DiskStoraging {
     func loadUser(name:String) -> Observable<UserEntity>
     func saveUser(user:UserEntity) -> Observable<Bool>
+    func loadRepo(id:Int) -> Observable<RepositoryEntity>
+    func flushDb() -> Observable<Bool>
+
 }

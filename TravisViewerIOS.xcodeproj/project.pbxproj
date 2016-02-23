@@ -14,9 +14,6 @@
 		DC39F0A21C6C24AC006C95A7 /* BuildTableViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC39F0A11C6C24AC006C95A7 /* BuildTableViewModelSpec.swift */; };
 		DC39F0A31C6C28B8006C95A7 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5E75E41C6BC722004918AD /* RxBlocking.framework */; };
 		DC39F0A41C6C28BF006C95A7 /* RxBlocking.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC5E75E41C6BC722004918AD /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DC39F0A51C6C2917006C95A7 /* RxCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB571C6379D80097F81D /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DC39F0A61C6C294C006C95A7 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB571C6379D80097F81D /* RxCocoa.framework */; };
-		DC39F0A81C6C2B07006C95A7 /* BuildTableViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC39F0A71C6C2B07006C95A7 /* BuildTableViewControllerSpec.swift */; };
 		DC39F0AB1C6C3172006C95A7 /* RepositoryEntitySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC39F0A91C6C314C006C95A7 /* RepositoryEntitySpec.swift */; };
 		DC39F0AE1C6C3BFD006C95A7 /* NetworkSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8BFBAE1C69D7E10097F81D /* NetworkSpec.swift */; };
 		DC39F0B01C6C3D86006C95A7 /* RepoTableViewModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC39F0AF1C6C3D86006C95A7 /* RepoTableViewModeling.swift */; };
@@ -27,8 +24,10 @@
 		DC5E75E61C6BC72B004918AD /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5E75E41C6BC722004918AD /* RxBlocking.framework */; };
 		DC5E75E81C6BC73F004918AD /* RxBlocking.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC5E75E41C6BC722004918AD /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DC5E75EA1C6BC784004918AD /* RxBlocking.framework.dSYM in Copy dSYMs */ = {isa = PBXBuildFile; fileRef = DC8BFBD31C6A16380097F81D /* RxBlocking.framework.dSYM */; };
+		DC6216541C7CBF71006FD0F1 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6216531C7CBF71006FD0F1 /* Dependencies.swift */; };
+		DC6216561C7CC25B006FD0F1 /* NetworkAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6216551C7CC25B006FD0F1 /* NetworkAlert.swift */; };
+		DC6216581C7CCF4B006FD0F1 /* KeyedStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6216571C7CCF4B006FD0F1 /* KeyedStorage.swift */; };
 		DC6B1BCD1C6EE84700810637 /* CoreDataStackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B1BCB1C6EE50D00810637 /* CoreDataStackManager.swift */; };
-		DC6B1BCF1C6EE99200810637 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6B1BCE1C6EE99200810637 /* CoreData.framework */; };
 		DC8BFA401C63534C0097F81D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC8BFA3E1C63534C0097F81D /* LaunchScreen.storyboard */; };
 		DC8BFAA21C6354050097F81D /* TVModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8BFAA11C6354050097F81D /* TVModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC8BFAA91C6354050097F81D /* TVModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFA9F1C6354050097F81D /* TVModel.framework */; };
@@ -38,13 +37,11 @@
 		DC8BFACB1C6354120097F81D /* TVViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFAC11C6354120097F81D /* TVViewModel.framework */; };
 		DC8BFAD61C6354120097F81D /* TVViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFAC11C6354120097F81D /* TVViewModel.framework */; };
 		DC8BFAD71C6354120097F81D /* TVViewModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFAC11C6354120097F81D /* TVViewModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DC8BFAED1C6354240097F81D /* TVView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFAE31C6354230097F81D /* TVView.framework */; };
 		DC8BFAF81C6354240097F81D /* TVView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFAE31C6354230097F81D /* TVView.framework */; };
 		DC8BFAF91C6354240097F81D /* TVView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFAE31C6354230097F81D /* TVView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DC8BFB051C63552D0097F81D /* TVViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFAC11C6354120097F81D /* TVViewModel.framework */; };
 		DC8BFB061C6355370097F81D /* TVModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFA9F1C6354050097F81D /* TVModel.framework */; };
 		DC8BFB071C6355C30097F81D /* TVModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFA9F1C6354050097F81D /* TVModel.framework */; };
-		DC8BFB081C6355CF0097F81D /* TVViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFAC11C6354120097F81D /* TVViewModel.framework */; };
 		DC8BFB091C6355E00097F81D /* TVModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFA9F1C6354050097F81D /* TVModel.framework */; };
 		DC8BFB0A1C6355E00097F81D /* TVView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFAE31C6354230097F81D /* TVView.framework */; };
 		DC8BFB0B1C6355E00097F81D /* TVViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFAC11C6354120097F81D /* TVViewModel.framework */; };
@@ -72,14 +69,6 @@
 		DC8BFBB51C6A10FD0097F81D /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB551C6379D80097F81D /* Swinject.framework */; };
 		DC8BFBB61C6A11180097F81D /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB581C6379D80097F81D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DC8BFBB71C6A11190097F81D /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB591C6379D80097F81D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DC8BFBC01C6A148A0097F81D /* RxSwift.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB561C6379D80097F81D /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DC8BFBC11C6A148B0097F81D /* RxCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB571C6379D80097F81D /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DC8BFBC21C6A148B0097F81D /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB581C6379D80097F81D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DC8BFBC31C6A148B0097F81D /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB591C6379D80097F81D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DC8BFBC41C6A14BF0097F81D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB561C6379D80097F81D /* RxSwift.framework */; };
-		DC8BFBC51C6A14BF0097F81D /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB571C6379D80097F81D /* RxCocoa.framework */; };
-		DC8BFBC61C6A14BF0097F81D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB581C6379D80097F81D /* Quick.framework */; };
-		DC8BFBC71C6A14BF0097F81D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB591C6379D80097F81D /* Nimble.framework */; };
 		DC8BFBC91C6A152B0097F81D /* RxSwift.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB561C6379D80097F81D /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DC8BFBCB1C6A152C0097F81D /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB581C6379D80097F81D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DC8BFBCC1C6A152C0097F81D /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB591C6379D80097F81D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -91,13 +80,11 @@
 		DCA0136B1C6AD45D00C85CC6 /* AppDelegateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA0136A1C6AD45D00C85CC6 /* AppDelegateSpec.swift */; };
 		DCA0136E1C6AD6A700C85CC6 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB591C6379D80097F81D /* Nimble.framework */; };
 		DCA0136F1C6AD6AA00C85CC6 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB581C6379D80097F81D /* Quick.framework */; };
-		DCA013701C6AD7EB00C85CC6 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB561C6379D80097F81D /* RxSwift.framework */; };
 		DCA013711C6AD7EF00C85CC6 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB571C6379D80097F81D /* RxCocoa.framework */; };
 		DCA013721C6AD80800C85CC6 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB561C6379D80097F81D /* RxSwift.framework */; };
 		DCA013731C6AD82E00C85CC6 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB561C6379D80097F81D /* RxSwift.framework */; };
 		DCA013751C6ADB2200C85CC6 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB571C6379D80097F81D /* RxCocoa.framework */; };
 		DCA013761C6ADB8C00C85CC6 /* RxCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB571C6379D80097F81D /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DCA013771C6ADBAD00C85CC6 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB571C6379D80097F81D /* RxCocoa.framework */; };
 		DCA013791C6AE25B00C85CC6 /* BuildTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA013781C6AE25B00C85CC6 /* BuildTableViewCellModel.swift */; };
 		DCCEE4D11C6C499A00E7345B /* RepoViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEE4CD1C6C46EF00E7345B /* RepoViewModelSpec.swift */; };
 		DCCEE4D21C6C4A2200E7345B /* StubNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEE4CF1C6C474000E7345B /* StubNetwork.swift */; };
@@ -105,7 +92,6 @@
 		DCCEE4D61C6C4C7400E7345B /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEE4D51C6C4C7400E7345B /* RepoTableViewCell.swift */; };
 		DCCEE4D81C6D557000E7345B /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEE4D71C6D557000E7345B /* UserEntity.swift */; };
 		DCCEE4DB1C6D5A6A00E7345B /* UserEntitySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEE4D91C6D578F00E7345B /* UserEntitySpec.swift */; };
-		DCCEE4DD1C6D772800E7345B /* RepoTableViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEE4DC1C6D772800E7345B /* RepoTableViewControllerSpec.swift */; };
 		DCCEE4E21C6D7FBE00E7345B /* UserSearchViewModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEE4E11C6D7FBE00E7345B /* UserSearchViewModeling.swift */; };
 		DCCEE4E41C6D7FD800E7345B /* UserSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEE4E31C6D7FD800E7345B /* UserSearchViewModel.swift */; };
 		DCCEE4E61C6D854900E7345B /* UserSearchResultModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEE4E51C6D854900E7345B /* UserSearchResultModeling.swift */; };
@@ -118,14 +104,22 @@
 		DCCEE5051C6EB32F00E7345B /* DiskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEE5041C6EB32F00E7345B /* DiskStorage.swift */; };
 		DCCEE5081C6EC83200E7345B /* Storaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEE5071C6EC83200E7345B /* Storaging.swift */; };
 		DCCEE50A1C6EC83E00E7345B /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEE5091C6EC83E00E7345B /* Storage.swift */; };
+		DCE6D08F1C7333D500BD8A87 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB571C6379D80097F81D /* RxCocoa.framework */; };
+		DCE6D0901C7333E600BD8A87 /* RxCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB571C6379D80097F81D /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DCE6D0941C733AA000BD8A87 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB561C6379D80097F81D /* RxSwift.framework */; };
+		DCF1A72A1C72D2FA00D132A7 /* UserSearchViewController+SessionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF1A7291C72D2FA00D132A7 /* UserSearchViewController+SessionData.swift */; };
+		DCF1A72C1C72EE3100D132A7 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF1A72B1C72EE3100D132A7 /* ColorPalette.swift */; };
 		DCF7B9451C6F2C6B009B108A /* BuildEntity+DBModelParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7B9441C6F2C6B009B108A /* BuildEntity+DBModelParser.swift */; };
 		DCF7B9471C6FE118009B108A /* UserEntity+DBModelParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7B9461C6FE118009B108A /* UserEntity+DBModelParser.swift */; };
 		DCF7B9491C6FE154009B108A /* RepositoryEntity+DBModelParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7B9481C6FE154009B108A /* RepositoryEntity+DBModelParser.swift */; };
 		DCF7B94C1C7005A1009B108A /* TravisViewer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCF7B94A1C7005A1009B108A /* TravisViewer.xcdatamodeld */; };
 		DCF7B9531C706EE0009B108A /* Build+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEE4FA1C6EAF8500E7345B /* Build+CoreDataProperties.swift */; };
 		DCF7B9561C707C3D009B108A /* TravisViewer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCF7B94A1C7005A1009B108A /* TravisViewer.xcdatamodeld */; };
-		DCF7B9581C707D2D009B108A /* CoreData.framework in Resources */ = {isa = PBXBuildFile; fileRef = DC6B1BCE1C6EE99200810637 /* CoreData.framework */; };
-		DCF7B9591C707D60009B108A /* DiskStorageSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7B94E1C706403009B108A /* DiskStorageSpec.swift */; };
+		DCF7B9591C707D60009B108A /* DBUserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7B94E1C706403009B108A /* DBUserSpec.swift */; };
+		DCF7B9881C708DCF009B108A /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB571C6379D80097F81D /* RxCocoa.framework */; };
+		DCF7B99D1C71522B009B108A /* TravisViewer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCF7B94A1C7005A1009B108A /* TravisViewer.xcdatamodeld */; };
+		DCF7B99E1C716EFA009B108A /* TravisViewer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCF7B94A1C7005A1009B108A /* TravisViewer.xcdatamodeld */; };
+		DCF7B9F91C71D543009B108A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7B9F81C71D543009B108A /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,13 +157,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = DC8BFAC01C6354120097F81D;
 			remoteInfo = TVViewModel;
-		};
-		DC8BFAEE1C6354240097F81D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DC8BFA2A1C63534C0097F81D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DC8BFAE21C6354230097F81D;
-			remoteInfo = TVView;
 		};
 		DC8BFAF61C6354240097F81D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -251,28 +238,14 @@
 			name = "Copy dSYMs";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC8BFBBF1C6A14730097F81D /* Copy Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				DC8BFBC01C6A148A0097F81D /* RxSwift.framework in Copy Frameworks */,
-				DC8BFBC11C6A148B0097F81D /* RxCocoa.framework in Copy Frameworks */,
-				DC8BFBC21C6A148B0097F81D /* Quick.framework in Copy Frameworks */,
-				DC8BFBC31C6A148B0097F81D /* Nimble.framework in Copy Frameworks */,
-			);
-			name = "Copy Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DC8BFBC81C6A150C0097F81D /* Copy Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DC39F0A51C6C2917006C95A7 /* RxCocoa.framework in Copy Frameworks */,
 				DC39F0A41C6C28BF006C95A7 /* RxBlocking.framework in Copy Frameworks */,
+				DCE6D0901C7333E600BD8A87 /* RxCocoa.framework in Copy Frameworks */,
 				DC8BFBC91C6A152B0097F81D /* RxSwift.framework in Copy Frameworks */,
 				DC8BFBCB1C6A152C0097F81D /* Quick.framework in Copy Frameworks */,
 				DC8BFBCC1C6A152C0097F81D /* Nimble.framework in Copy Frameworks */,
@@ -290,7 +263,6 @@
 		DC2F55301C6A75AE006A4444 /* BuildTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildTableViewModel.swift; path = ../TVView/BuildTableViewModel.swift; sourceTree = "<group>"; };
 		DC2F55321C6A77B0006A4444 /* BuildTableViewCellModeling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildTableViewCellModeling.swift; sourceTree = "<group>"; };
 		DC39F0A11C6C24AC006C95A7 /* BuildTableViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildTableViewModelSpec.swift; sourceTree = "<group>"; };
-		DC39F0A71C6C2B07006C95A7 /* BuildTableViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildTableViewControllerSpec.swift; sourceTree = "<group>"; };
 		DC39F0A91C6C314C006C95A7 /* RepositoryEntitySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryEntitySpec.swift; sourceTree = "<group>"; };
 		DC39F0AF1C6C3D86006C95A7 /* RepoTableViewModeling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewModeling.swift; sourceTree = "<group>"; };
 		DC39F0B11C6C3DF4006C95A7 /* RepoTableViewCellModeling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewCellModeling.swift; sourceTree = "<group>"; };
@@ -299,8 +271,10 @@
 		DC5E75DE1C6BBBC7004918AD /* RxTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTests.framework; path = Carthage/Build/iOS/RxTests.framework; sourceTree = "<group>"; };
 		DC5E75E01C6BBBD8004918AD /* RxTests.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxTests.framework.dSYM; path = Carthage/Build/iOS/RxTests.framework.dSYM; sourceTree = "<group>"; };
 		DC5E75E41C6BC722004918AD /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		DC6216531C7CBF71006FD0F1 /* Dependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		DC6216551C7CC25B006FD0F1 /* NetworkAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkAlert.swift; sourceTree = "<group>"; };
+		DC6216571C7CCF4B006FD0F1 /* KeyedStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyedStorage.swift; sourceTree = "<group>"; };
 		DC6B1BCB1C6EE50D00810637 /* CoreDataStackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStackManager.swift; sourceTree = "<group>"; };
-		DC6B1BCE1C6EE99200810637 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		DC8BFA321C63534C0097F81D /* TravisViewerIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravisViewerIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8BFA3F1C63534C0097F81D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC8BFA461C63534C0097F81D /* TravisViewerIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravisViewerIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -308,7 +282,7 @@
 		DC8BFA9F1C6354050097F81D /* TVModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TVModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8BFAA11C6354050097F81D /* TVModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TVModel.h; sourceTree = "<group>"; };
 		DC8BFAA31C6354050097F81D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC8BFAA81C6354050097F81D /* TVModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC8BFAA81C6354050097F81D /* 					.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "\t\t\t\t\t.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8BFAAF1C6354050097F81D /* BuildEntitySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildEntitySpec.swift; sourceTree = "<group>"; };
 		DC8BFAB11C6354050097F81D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC8BFAC11C6354120097F81D /* TVViewModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TVViewModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -319,8 +293,6 @@
 		DC8BFAE31C6354230097F81D /* TVView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TVView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8BFAE51C6354240097F81D /* TVView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TVView.h; sourceTree = "<group>"; };
 		DC8BFAE71C6354240097F81D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC8BFAEC1C6354240097F81D /* TVViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC8BFAF51C6354240097F81D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC8BFB461C6377E10097F81D /* Swinject.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Swinject.framework.dSYM; path = Carthage/Build/iOS/Swinject.framework.dSYM; sourceTree = "<group>"; };
 		DC8BFB471C6377E10097F81D /* RxSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxSwift.framework.dSYM; path = Carthage/Build/iOS/RxSwift.framework.dSYM; sourceTree = "<group>"; };
 		DC8BFB481C6377E10097F81D /* RxCocoa.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxCocoa.framework.dSYM; path = Carthage/Build/iOS/RxCocoa.framework.dSYM; sourceTree = "<group>"; };
@@ -342,13 +314,14 @@
 		DC8BFBD31C6A16380097F81D /* RxBlocking.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxBlocking.framework.dSYM; path = Carthage/Build/iOS/RxBlocking.framework.dSYM; sourceTree = "<group>"; };
 		DCA0136A1C6AD45D00C85CC6 /* AppDelegateSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateSpec.swift; sourceTree = "<group>"; };
 		DCA013781C6AE25B00C85CC6 /* BuildTableViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildTableViewCellModel.swift; sourceTree = "<group>"; };
+		DCBC29001C733C630033D078 /* TVViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVViewTests.swift; sourceTree = "<group>"; };
+		DCBC29021C733C630033D078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCCEE4CD1C6C46EF00E7345B /* RepoViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoViewModelSpec.swift; sourceTree = "<group>"; };
 		DCCEE4CF1C6C474000E7345B /* StubNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubNetwork.swift; sourceTree = "<group>"; };
 		DCCEE4D31C6C4BF900E7345B /* RepoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewController.swift; sourceTree = "<group>"; };
 		DCCEE4D51C6C4C7400E7345B /* RepoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
 		DCCEE4D71C6D557000E7345B /* UserEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		DCCEE4D91C6D578F00E7345B /* UserEntitySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEntitySpec.swift; sourceTree = "<group>"; };
-		DCCEE4DC1C6D772800E7345B /* RepoTableViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewControllerSpec.swift; sourceTree = "<group>"; };
 		DCCEE4E11C6D7FBE00E7345B /* UserSearchViewModeling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchViewModeling.swift; sourceTree = "<group>"; };
 		DCCEE4E31C6D7FD800E7345B /* UserSearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchViewModel.swift; sourceTree = "<group>"; };
 		DCCEE4E51C6D854900E7345B /* UserSearchResultModeling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchResultModeling.swift; sourceTree = "<group>"; };
@@ -362,11 +335,14 @@
 		DCCEE5041C6EB32F00E7345B /* DiskStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiskStorage.swift; sourceTree = "<group>"; };
 		DCCEE5071C6EC83200E7345B /* Storaging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storaging.swift; sourceTree = "<group>"; };
 		DCCEE5091C6EC83E00E7345B /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		DCF1A7291C72D2FA00D132A7 /* UserSearchViewController+SessionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserSearchViewController+SessionData.swift"; sourceTree = "<group>"; };
+		DCF1A72B1C72EE3100D132A7 /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		DCF7B9441C6F2C6B009B108A /* BuildEntity+DBModelParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BuildEntity+DBModelParser.swift"; sourceTree = "<group>"; };
 		DCF7B9461C6FE118009B108A /* UserEntity+DBModelParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserEntity+DBModelParser.swift"; sourceTree = "<group>"; };
 		DCF7B9481C6FE154009B108A /* RepositoryEntity+DBModelParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RepositoryEntity+DBModelParser.swift"; sourceTree = "<group>"; };
 		DCF7B94B1C7005A1009B108A /* TravisViewer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TravisViewer.xcdatamodel; sourceTree = "<group>"; };
-		DCF7B94E1C706403009B108A /* DiskStorageSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiskStorageSpec.swift; sourceTree = "<group>"; };
+		DCF7B94E1C706403009B108A /* DBUserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBUserSpec.swift; sourceTree = "<group>"; };
+		DCF7B9F81C71D543009B108A /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -398,7 +374,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC6B1BCF1C6EE99200810637 /* CoreData.framework in Frameworks */,
 				DCA013751C6ADB2200C85CC6 /* RxCocoa.framework in Frameworks */,
 				DCA013731C6AD82E00C85CC6 /* RxSwift.framework in Frameworks */,
 			);
@@ -409,8 +384,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC8BFAA91C6354050097F81D /* TVModel.framework in Frameworks */,
-				DCA013771C6ADBAD00C85CC6 /* RxCocoa.framework in Frameworks */,
 				DC8BFB9A1C6961210097F81D /* RxSwift.framework in Frameworks */,
+				DCF7B9881C708DCF009B108A /* RxCocoa.framework in Frameworks */,
 				DC5E75E61C6BC72B004918AD /* RxBlocking.framework in Frameworks */,
 				DC8BFB981C6961210097F81D /* Quick.framework in Frameworks */,
 				DC8BFB971C6961210097F81D /* Nimble.framework in Frameworks */,
@@ -433,8 +408,8 @@
 				DC8BFB071C6355C30097F81D /* TVModel.framework in Frameworks */,
 				DC8BFACB1C6354120097F81D /* TVViewModel.framework in Frameworks */,
 				DC39F0A31C6C28B8006C95A7 /* RxBlocking.framework in Frameworks */,
-				DC39F0A61C6C294C006C95A7 /* RxCocoa.framework in Frameworks */,
 				DC8BFBCD1C6A15370097F81D /* RxSwift.framework in Frameworks */,
+				DCE6D08F1C7333D500BD8A87 /* RxCocoa.framework in Frameworks */,
 				DC8BFBCF1C6A15370097F81D /* Quick.framework in Frameworks */,
 				DC8BFBD01C6A15370097F81D /* Nimble.framework in Frameworks */,
 			);
@@ -445,21 +420,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC8BFB051C63552D0097F81D /* TVViewModel.framework in Frameworks */,
-				DCA013701C6AD7EB00C85CC6 /* RxSwift.framework in Frameworks */,
+				DCE6D0941C733AA000BD8A87 /* RxSwift.framework in Frameworks */,
 				DCA013711C6AD7EF00C85CC6 /* RxCocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DC8BFAE91C6354240097F81D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC8BFB081C6355CF0097F81D /* TVViewModel.framework in Frameworks */,
-				DC8BFAED1C6354240097F81D /* TVView.framework in Frameworks */,
-				DC8BFBC41C6A14BF0097F81D /* RxSwift.framework in Frameworks */,
-				DC8BFBC51C6A14BF0097F81D /* RxCocoa.framework in Frameworks */,
-				DC8BFBC61C6A14BF0097F81D /* Quick.framework in Frameworks */,
-				DC8BFBC71C6A14BF0097F81D /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,11 +431,10 @@
 		DC8BFA291C63534C0097F81D = {
 			isa = PBXGroup;
 			children = (
+				DC8BFB001C63544C0097F81D /* Tests */,
 				DC8BFB231C6361D60097F81D /* dSYMs */,
 				DC8BFB0E1C635D7A0097F81D /* Frameworks */,
-				DC8BFB001C63544C0097F81D /* Tests */,
 				DC8BFA341C63534C0097F81D /* TravisViewerIOS */,
-				DC8BFA491C63534C0097F81D /* TravisViewerIOSTests */,
 				DC8BFAA01C6354050097F81D /* TVModel */,
 				DC8BFAC21C6354120097F81D /* TVViewModel */,
 				DC8BFAE41C6354240097F81D /* TVView */,
@@ -487,11 +448,10 @@
 				DC8BFA321C63534C0097F81D /* TravisViewerIOS.app */,
 				DC8BFA461C63534C0097F81D /* TravisViewerIOSTests.xctest */,
 				DC8BFA9F1C6354050097F81D /* TVModel.framework */,
-				DC8BFAA81C6354050097F81D /* TVModelTests.xctest */,
+				DC8BFAA81C6354050097F81D /* 					.xctest */,
 				DC8BFAC11C6354120097F81D /* TVViewModel.framework */,
 				DC8BFACA1C6354120097F81D /* TVViewModelTests.xctest */,
 				DC8BFAE31C6354230097F81D /* TVView.framework */,
-				DC8BFAEC1C6354240097F81D /* TVViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -538,9 +498,9 @@
 				DC8BFAB11C6354050097F81D /* Info.plist */,
 				DC8BFB9C1C6966010097F81D /* Dummy.swift */,
 				DC8BFBAE1C69D7E10097F81D /* NetworkSpec.swift */,
-				DC39F0A91C6C314C006C95A7 /* RepositoryEntitySpec.swift */,
 				DCCEE4D91C6D578F00E7345B /* UserEntitySpec.swift */,
-				DCF7B94E1C706403009B108A /* DiskStorageSpec.swift */,
+				DC39F0A91C6C314C006C95A7 /* RepositoryEntitySpec.swift */,
+				DCF7B94E1C706403009B108A /* DBUserSpec.swift */,
 			);
 			path = TVModelTests;
 			sourceTree = "<group>";
@@ -574,32 +534,29 @@
 			children = (
 				DC8BFAE51C6354240097F81D /* TVView.h */,
 				DCCEE4EC1C6D970A00E7345B /* UserSearchViewController.swift */,
+				DCF1A7291C72D2FA00D132A7 /* UserSearchViewController+SessionData.swift */,
 				DC8BFAE71C6354240097F81D /* Info.plist */,
 				DC2F55281C6A6D4F006A4444 /* BuildTableViewController.swift */,
 				DC2F552A1C6A6D88006A4444 /* BuildTableViewCell.swift */,
 				DC2F552C1C6A6DC6006A4444 /* Main.storyboard */,
 				DCCEE4D31C6C4BF900E7345B /* RepoTableViewController.swift */,
 				DCCEE4D51C6C4C7400E7345B /* RepoTableViewCell.swift */,
+				DCF7B9F81C71D543009B108A /* CardView.swift */,
+				DCF1A72B1C72EE3100D132A7 /* ColorPalette.swift */,
+				DC6216531C7CBF71006FD0F1 /* Dependencies.swift */,
+				DC6216551C7CC25B006FD0F1 /* NetworkAlert.swift */,
+				DC6216571C7CCF4B006FD0F1 /* KeyedStorage.swift */,
 			);
 			path = TVView;
-			sourceTree = "<group>";
-		};
-		DC8BFAF21C6354240097F81D /* TVViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				DC8BFAF51C6354240097F81D /* Info.plist */,
-				DC39F0A71C6C2B07006C95A7 /* BuildTableViewControllerSpec.swift */,
-				DCCEE4DC1C6D772800E7345B /* RepoTableViewControllerSpec.swift */,
-			);
-			path = TVViewTests;
 			sourceTree = "<group>";
 		};
 		DC8BFB001C63544C0097F81D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				DCBC28FF1C733C630033D078 /* TVViewTests */,
+				DC8BFA491C63534C0097F81D /* TravisViewerIOSTests */,
 				DC8BFAAE1C6354050097F81D /* TVModelTests */,
 				DC8BFAD01C6354120097F81D /* TVViewModelTests */,
-				DC8BFAF21C6354240097F81D /* TVViewTests */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -607,7 +564,6 @@
 		DC8BFB0E1C635D7A0097F81D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DC6B1BCE1C6EE99200810637 /* CoreData.framework */,
 				DC5E75E41C6BC722004918AD /* RxBlocking.framework */,
 				DC5E75DE1C6BBBC7004918AD /* RxTests.framework */,
 				DC8BFB551C6379D80097F81D /* Swinject.framework */,
@@ -631,6 +587,15 @@
 				DC8BFB4A1C6377E10097F81D /* Nimble.framework.dSYM */,
 			);
 			name = dSYMs;
+			sourceTree = "<group>";
+		};
+		DCBC28FF1C733C630033D078 /* TVViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCBC29001C733C630033D078 /* TVViewTests.swift */,
+				DCBC29021C733C630033D078 /* Info.plist */,
+			);
+			path = TVViewTests;
 			sourceTree = "<group>";
 		};
 		DCCEE4DE1C6D7F2100E7345B /* BuildViewModels */ = {
@@ -782,9 +747,9 @@
 			productReference = DC8BFA9F1C6354050097F81D /* TVModel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DC8BFAA71C6354050097F81D /* TVModelTests */ = {
+		DC8BFAA71C6354050097F81D /* 					 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC8BFAB91C6354050097F81D /* Build configuration list for PBXNativeTarget "TVModelTests" */;
+			buildConfigurationList = DC8BFAB91C6354050097F81D /* Build configuration list for PBXNativeTarget "					" */;
 			buildPhases = (
 				DC8BFAA41C6354050097F81D /* Sources */,
 				DC8BFAA51C6354050097F81D /* Frameworks */,
@@ -796,9 +761,9 @@
 			dependencies = (
 				DC8BFAAB1C6354050097F81D /* PBXTargetDependency */,
 			);
-			name = TVModelTests;
+			name = "					";
 			productName = TVModelTests;
-			productReference = DC8BFAA81C6354050097F81D /* TVModelTests.xctest */;
+			productReference = DC8BFAA81C6354050097F81D /* 					.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		DC8BFAC01C6354120097F81D /* TVViewModel */ = {
@@ -858,25 +823,6 @@
 			productReference = DC8BFAE31C6354230097F81D /* TVView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DC8BFAEB1C6354240097F81D /* TVViewTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DC8BFAFD1C6354240097F81D /* Build configuration list for PBXNativeTarget "TVViewTests" */;
-			buildPhases = (
-				DC8BFAE81C6354240097F81D /* Sources */,
-				DC8BFAE91C6354240097F81D /* Frameworks */,
-				DC8BFAEA1C6354240097F81D /* Resources */,
-				DC8BFBBF1C6A14730097F81D /* Copy Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DC8BFAEF1C6354240097F81D /* PBXTargetDependency */,
-			);
-			name = TVViewTests;
-			productName = TVViewTests;
-			productReference = DC8BFAEC1C6354240097F81D /* TVViewTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -909,9 +855,6 @@
 					DC8BFAE21C6354230097F81D = {
 						CreatedOnToolsVersion = 7.2;
 					};
-					DC8BFAEB1C6354240097F81D = {
-						CreatedOnToolsVersion = 7.2;
-					};
 				};
 			};
 			buildConfigurationList = DC8BFA2D1C63534C0097F81D /* Build configuration list for PBXProject "TravisViewerIOS" */;
@@ -930,11 +873,10 @@
 				DC8BFA311C63534C0097F81D /* TravisViewerIOS */,
 				DC8BFA451C63534C0097F81D /* TravisViewerIOSTests */,
 				DC8BFA9E1C6354050097F81D /* TVModel */,
-				DC8BFAA71C6354050097F81D /* TVModelTests */,
+				DC8BFAA71C6354050097F81D /* 					 */,
 				DC8BFAC01C6354120097F81D /* TVViewModel */,
 				DC8BFAC91C6354120097F81D /* TVViewModelTests */,
 				DC8BFAE21C6354230097F81D /* TVView */,
-				DC8BFAEB1C6354240097F81D /* TVViewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -961,7 +903,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCF7B9581C707D2D009B108A /* CoreData.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -994,13 +935,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC8BFAEA1C6354240097F81D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -1030,6 +964,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCF7B99D1C71522B009B108A /* TravisViewer.xcdatamodeld in Sources */,
 				DC8BFB651C637F360097F81D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1038,6 +973,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCF7B99E1C716EFA009B108A /* TravisViewer.xcdatamodeld in Sources */,
 				DCA0136B1C6AD45D00C85CC6 /* AppDelegateSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1076,7 +1012,7 @@
 				DC39F0AE1C6C3BFD006C95A7 /* NetworkSpec.swift in Sources */,
 				DCCEE4DB1C6D5A6A00E7345B /* UserEntitySpec.swift in Sources */,
 				DC8BFAB01C6354050097F81D /* BuildEntitySpec.swift in Sources */,
-				DCF7B9591C707D60009B108A /* DiskStorageSpec.swift in Sources */,
+				DCF7B9591C707D60009B108A /* DBUserSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1117,17 +1053,14 @@
 				DC2F552B1C6A6D88006A4444 /* BuildTableViewCell.swift in Sources */,
 				DCCEE4D41C6C4BF900E7345B /* RepoTableViewController.swift in Sources */,
 				DC2F55291C6A6D4F006A4444 /* BuildTableViewController.swift in Sources */,
+				DC6216541C7CBF71006FD0F1 /* Dependencies.swift in Sources */,
+				DCF1A72C1C72EE3100D132A7 /* ColorPalette.swift in Sources */,
+				DC6216581C7CCF4B006FD0F1 /* KeyedStorage.swift in Sources */,
+				DC6216561C7CC25B006FD0F1 /* NetworkAlert.swift in Sources */,
 				DCCEE4D61C6C4C7400E7345B /* RepoTableViewCell.swift in Sources */,
+				DCF7B9F91C71D543009B108A /* CardView.swift in Sources */,
+				DCF1A72A1C72D2FA00D132A7 /* UserSearchViewController+SessionData.swift in Sources */,
 				DCCEE4ED1C6D970A00E7345B /* UserSearchViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DC8BFAE81C6354240097F81D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DCCEE4DD1C6D772800E7345B /* RepoTableViewControllerSpec.swift in Sources */,
-				DC39F0A81C6C2B07006C95A7 /* BuildTableViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1158,11 +1091,6 @@
 			isa = PBXTargetDependency;
 			target = DC8BFAC01C6354120097F81D /* TVViewModel */;
 			targetProxy = DC8BFAD41C6354120097F81D /* PBXContainerItemProxy */;
-		};
-		DC8BFAEF1C6354240097F81D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DC8BFAE21C6354230097F81D /* TVView */;
-			targetProxy = DC8BFAEE1C6354240097F81D /* PBXContainerItemProxy */;
 		};
 		DC8BFAF71C6354240097F81D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1319,6 +1247,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					/Applications/Xcode.app/Contents/Developer/Library/Frameworks/,
 				);
 				INFOPLIST_FILE = TravisViewerIOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1337,6 +1266,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					/Applications/Xcode.app/Contents/Developer/Library/Frameworks/,
 				);
 				INFOPLIST_FILE = TravisViewerIOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1558,37 +1488,6 @@
 			};
 			name = Release;
 		};
-		DC8BFAFE1C6354240097F81D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = TVViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.TVViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		DC8BFAFF1C6354240097F81D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = TVViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.TVViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1628,7 +1527,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC8BFAB91C6354050097F81D /* Build configuration list for PBXNativeTarget "TVModelTests" */ = {
+		DC8BFAB91C6354050097F81D /* Build configuration list for PBXNativeTarget "					" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC8BFABA1C6354050097F81D /* Debug */,
@@ -1660,15 +1559,6 @@
 			buildConfigurations = (
 				DC8BFAFB1C6354240097F81D /* Debug */,
 				DC8BFAFC1C6354240097F81D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DC8BFAFD1C6354240097F81D /* Build configuration list for PBXNativeTarget "TVViewTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DC8BFAFE1C6354240097F81D /* Debug */,
-				DC8BFAFF1C6354240097F81D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

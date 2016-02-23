@@ -10,4 +10,5 @@ public protocol RepoTableViewCellModeling {
     var id: Int { get }
     var slug: String { get }
     var description: String { get }
+    var numberOfBuilds: Int { get }
 }

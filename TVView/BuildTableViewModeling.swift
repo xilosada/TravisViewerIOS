@@ -10,5 +10,5 @@ import TVModel
 import RxSwift
 
 public protocol BuildTableViewModeling {
-    func loadBuilds(repoName: String) -> Observable<[BuildTableViewCellModeling]>
+    func getBuilds(repoId: Int) -> Observable<[BuildTableViewCellModeling]>
 }

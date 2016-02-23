@@ -39,11 +39,16 @@ public final class Network: Networking {
     public func requestRepositories(username: String) -> Observable<[RepositoryEntity]> {
         
         let urlContent = "https://api.travis-ci.org/repos/\(username)"
-        let url = NSURL(string: urlContent)!
+        guard let url = NSURL(string: urlContent) else {
+            return Observable.empty()
+        }
         return rx_JSON(url).map{
             json in
             do {
-                let entities = try RepositoryEntity.Mapper.parseJSONArray(json as! [AnyObject])
+                guard let json = json as? [AnyObject] else {
+                    return []
+                }
+                let entities = try RepositoryEntity.Mapper.parseJSONArray(json)
                 return entities
             } catch {
                 return []

@@ -17,6 +17,7 @@ class Build: NSManagedObject {
     @NSManaged var number: String
     @NSManaged var message: String?
     @NSManaged var branch: String
+    @NSManaged var status: Int
     @NSManaged var repo: Repo?
 
     override init(entity: NSEntityDescription, insertIntoManagedObjectContext context: NSManagedObjectContext?) {
@@ -24,7 +25,7 @@ class Build: NSManagedObject {
         
     }
     
-    init(number:String, message: String, branch: String, context: NSManagedObjectContext){
+    init(number:String, message: String, branch: String, status: Int, context: NSManagedObjectContext){
         
         let entity =  NSEntityDescription.entityForName("Build", inManagedObjectContext: context)!
         super.init(entity: entity,insertIntoManagedObjectContext: context)
@@ -32,5 +33,12 @@ class Build: NSManagedObject {
         self.number = number
         self.message = message
         self.branch = branch
+        self.status = status
+    }
+}
+
+extension Build {
+    func toEntity() -> BuildEntity{
+        return BuildEntity(number: number, message: message!, branch: branch, status: BuildEntity.StatusCode(rawValue: status)!)
     }
 }

@@ -10,4 +10,5 @@ public protocol UserSearchResultModeling {
     var username: String { get }
     var avatarUrl: String? { get }
     var result: Bool { get }
+    var numberOfRepos: Int { get }
 }

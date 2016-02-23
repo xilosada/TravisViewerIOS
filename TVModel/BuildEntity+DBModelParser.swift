@@ -6,9 +6,11 @@
 //  Copyright © 2016 XiLosada. All rights reserved.
 //
 
+import CoreData
+
 extension BuildEntity {
     
-    func parseToDBO() -> Build {
-        return Build(number: number, message: message, branch: branch, context: CoreDataStackManager.instance.managedObjectContext)
+    func parseToDBO(context: NSManagedObjectContext) -> Build {
+        return Build(number: number, message: message, branch: branch, status: status.rawValue ,context: context)
     }
 }

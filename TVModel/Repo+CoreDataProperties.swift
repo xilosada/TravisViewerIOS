@@ -13,15 +13,15 @@ import Foundation
 import CoreData
 
 class Repo: NSManagedObject {
-
+    
     @NSManaged var id: NSNumber?
     @NSManaged var slug: String?
     @NSManaged var descr: String?
     
-    @NSManaged var builds : NSSet?
+    @NSManaged var builds : NSOrderedSet?
     @NSManaged var user: User?
     
-    override init(entity: NSEntityDescription, insertIntoManagedObjectContext context: NSManagedObjectContext?) {
+    override init(entity: NSEntityDescription, insertIntoManagedObjectContext context: NSManagedObjectContext?){
         super.init(entity: entity, insertIntoManagedObjectContext: context)
         
     }
@@ -29,8 +29,26 @@ class Repo: NSManagedObject {
     init(id:Int, slug: String, description: String, context: NSManagedObjectContext){
         let entity =  NSEntityDescription.entityForName("Repo", inManagedObjectContext: context)!
         super.init(entity: entity,insertIntoManagedObjectContext: context)
-        self.id = id
+        self.id = id as NSNumber
         self.slug = slug
         self.descr = description
+    }
+
+}
+
+extension Repo {
+    func toEntity() -> RepositoryEntity {
+        var repo = RepositoryEntity(
+            id: id!.integerValue,
+            slug: slug!,
+            description: descr!)
+        
+        var buildsAux = [BuildEntity]()
+        builds?.forEach{ anyBuild in
+            let dbBuild = anyBuild as! Build
+            buildsAux.append(dbBuild.toEntity())
+        }
+        repo.builds = buildsAux
+        return repo
     }
 }

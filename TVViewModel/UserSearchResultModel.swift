@@ -13,17 +13,19 @@ public class UserSearchResultModel: UserSearchResultModeling {
     public let username: String
     public let avatarUrl: String?
     public let result: Bool
-    
+    public let numberOfRepos: Int
+
     internal init(user: UserEntity?){
         if let user = user {
             username = user.name
             avatarUrl = user.avatarUrl
             result = true
+            numberOfRepos = user.repos.count
             return
         }
         username = ""
         avatarUrl = ""
         result = false
-        
+        numberOfRepos = 0
     }
 }

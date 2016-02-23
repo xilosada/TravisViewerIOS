@@ -6,13 +6,16 @@
 //  Copyright © 2016 XiLosada. All rights reserved.
 //
 
+import CoreData
+
 extension UserEntity {
     
-    func parseToDBO() -> User {
-        let user = User(name: name, avatarUrl: avatarUrl, context: CoreDataStackManager.instance.managedObjectContext)
-        var repoList = [Repo]()
-        repos.forEach{ repoList.append( $0.parseToDBO() )}
-        user.repos = NSSet(array: repoList)
+    func parseToDBO(context: NSManagedObjectContext) -> User {
+        let user = User(name: name, avatarUrl: avatarUrl, context: context)
+        
+        let dbRepos = NSOrderedSet(array: repos.map{ $0.parseToDBO(context) })
+        user.repos = dbRepos
+        
         return user
     }
 }

@@ -11,15 +11,15 @@ import RxSwift
 
 public final class RepoTableViewModel: RepoTableViewModeling {
     
-    private let network: Networking
+    private let storage: Storaging!
     
-    public init(network: Networking) {
-        self.network = network
+    public init(storage: Storaging) {
+        self.storage = storage
     }
     
-    public func loadRepos(username: String) -> Observable<[RepoTableViewCellModeling]> {
-        return network.requestRepositories(username).map{
-            $0.flatMap{ RepoTableViewCellModel(repo: $0) as RepoTableViewCellModeling}
+    public func getRepos(username: String) -> Observable<[RepoTableViewCellModeling]> {
+        return storage.getRepos(username).map{
+            $0.flatMap{ RepoTableViewCellModel(repo: $0) as RepoTableViewCellModeling }
         }
     }
 }

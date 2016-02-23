@@ -9,4 +9,6 @@ import RxSwift
 
 public protocol Storaging {
     func getUser(username:String) -> Observable<UserEntity>
+    func getRepos(username:String) -> Observable<[RepositoryEntity]>
+    func getBuilds(repoId:Int) -> Observable<[BuildEntity]>
 }
