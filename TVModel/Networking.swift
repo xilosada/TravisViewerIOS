@@ -8,7 +8,11 @@
 
 import RxSwift
 
-public protocol Networking {
+public protocol Networking
+{
     func requestRepositories(username: String) -> Observable<[RepositoryEntity]>
     func requestBuilds(repositoryName: String) -> Observable<[BuildEntity]>
+    
+    func searchUser(username: String) -> Observable<UserEntity>
+
 }

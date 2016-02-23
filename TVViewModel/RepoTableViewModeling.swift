@@ -8,5 +8,5 @@
 import RxSwift
 
 public protocol RepoTableViewModeling {
-    func loadRepos(username: String) -> Observable<[RepoTableViewCellModeling]>
+    func getRepos(username: String) -> Observable<[RepoTableViewCellModeling]>
 }

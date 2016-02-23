@@ -13,6 +13,8 @@ public struct RepositoryEntity {
     public let slug: String
     public let description: String
     
+    public var builds = [BuildEntity]()
+
     init(id: Int, slug: String, description: String) {
         self.id = id
         self.slug = slug
@@ -21,7 +23,7 @@ public struct RepositoryEntity {
 }
 
 extension RepositoryEntity {
-    init?(dictionary: [String : AnyObject?]) {
+    init?(dictionary: NSDictionary) {
         guard let id = dictionary["id"] as? Int,
         slug = dictionary["slug"] as? String,
         description = dictionary["description"] as? String
@@ -39,7 +41,9 @@ extension RepositoryEntity {
             var repos = [RepositoryEntity]()
             try jsonArray.forEach { jsonObject in
                 if let repoDictionary = jsonObject as? NSDictionary {
-                    repos.append(RepositoryEntity(dictionary: repoDictionary as! [String:AnyObject])!)
+                    if let repo = RepositoryEntity(dictionary: repoDictionary){
+                        repos.append(repo)
+                    }
                 } else {
                     throw NSError(domain: "repo mapper", code: 0, userInfo: nil)
                 }

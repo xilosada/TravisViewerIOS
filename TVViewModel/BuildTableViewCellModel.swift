@@ -12,17 +12,21 @@ public final class BuildTableViewCellModel: BuildTableViewCellModeling {
     public let number: String
     public let branchText: String
     public let statusText: String
+    public let result: Bool
     
     internal init(build: BuildEntity) {
         number = build.number
         branchText = "\(build.branch)"
         switch build.status {
         case .Errored:
-            statusText = "Errored 😱"
+            statusText = "Errored ❗"
+            result = false
         case .Failed:
-            statusText = "Failed 😰"
+            statusText = "Failed ❌"
+            result = false
         case .Passed:
-            statusText = "Passed 😏"
+            statusText = "Passed ✅"
+            result = true
         }
     }
 }

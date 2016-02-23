@@ -16,17 +16,26 @@ import RxBlocking
 
 class BuildTableViewModelSpec: QuickSpec {
     
+    private class StubStorage: Storaging {
+        func getUser(username:String) -> Observable<UserEntity>{return Observable.empty()}
+        func getRepos(username:String) -> Observable<[RepositoryEntity]>{return Observable.empty()}
+        func getBuilds(repoId:Int) -> Observable<[BuildEntity]>{
+            let fakeBuild = BuildEntity(number: "1", message: "w", branch: "w", status: .Failed)
+            return Observable.just([fakeBuild])
+        }
+    }
+    
     // MARK: - Spec
     override func spec() {
         var viewModel: BuildTableViewModel!
         beforeEach {
-            viewModel =  BuildTableViewModel(network: StubNetwork())
+            viewModel =  BuildTableViewModel(storage: StubStorage())
         }
         describe("Constructor"){
             it("Constructor happy case works fine"){
-                let builds = try! viewModel.loadBuilds("test").toBlocking().first()
+                let builds = try! viewModel.getBuilds(1).toBlocking().first()
                 expect(builds).toNot(beNil())
-                expect(builds!.count).to(beGreaterThan(0))
+                expect(builds!.count).to(equal(1))
             }
         }
     }
