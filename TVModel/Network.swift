@@ -56,7 +56,6 @@ public final class Network: Networking {
         }
     }
     
-    
     public func searchUser(username: String) -> Observable<UserEntity> {
         let urlContent = "https://api.github.com/users/\(username)"
         let url = NSURL(string: urlContent.stringByAddingPercentEncodingWithAllowedCharacters(.URLQueryAllowedCharacterSet())!)!

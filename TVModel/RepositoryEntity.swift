@@ -33,7 +33,11 @@ extension RepositoryEntity {
         
         self.id = id
         self.slug = slug
-        self.description = description
+        if description.isEmpty {
+            self.description = "Description not provided"
+        }else {
+            self.description = description
+        }
     }
     
     struct Mapper{
