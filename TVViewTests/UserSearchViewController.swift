@@ -69,7 +69,7 @@ public class UserSearchViewController:  UIViewController {
     
     func renderError(error:ErrorType) -> Void{
         if(error._domain == NSURLErrorDomain){
-            NetworkAlert.showErrorAlert(self, onClosed: configureEditText)
+            NetworkAlert.showErrorAlert(self, onClosed: {})
             userField.text = ""
             userField.resetView()
         }else {

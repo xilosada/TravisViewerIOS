@@ -22,7 +22,13 @@ internal final class RepoTableViewCell: UITableViewCell {
             descriptionLabel.lineBreakMode = .ByWordWrapping
             descriptionLabel.numberOfLines = 0
             descriptionLabel.textColor = ColorPalette.secondary_textColor
-            numberOfBuildsLabel.textColor = numberOfBuilds > 0 ? ColorPalette.primary_darkColor : ColorPalette.accentColor
+            if numberOfBuilds <= 0 {
+                self.selectionStyle = UITableViewCellSelectionStyle.None
+                self.userInteractionEnabled = false
+                numberOfBuildsLabel.textColor = ColorPalette.accentColor
+            } else {
+                numberOfBuildsLabel.textColor = ColorPalette.primary_darkColor
+            }
         }
     }
     @IBOutlet weak var numberOfBuildsLabel: UILabel!
