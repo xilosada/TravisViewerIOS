@@ -16,9 +16,9 @@ This application allows you to view all builds from public repos in Travis-CI.
 This project uses Carthage to manage the frameworks. To install the carthage tool on your system, please download and run the Carthage.pkg file for the latest release, then follow the on-screen instructions.
 You can get more information about this method in this [link](https://github.com/Carthage/Carthage to get more info.)
 
-*Using homebrew*
+*Using Homebrew*
 
-Alternatively only on Xcode 7.x, you can use Homebrew and install the carthage tool on your system simply by running `brew update` and `brew install carthage`. (note: if you previously installed the binary version of Carthage, you should delete /Library/Frameworks/CarthageKit.framework).
+Alternatively only on Xcode 7.x, you can use *Homebrew* and install the carthage tool on your system simply by running `brew update` and `brew install carthage`. (note: if you previously installed the binary version of Carthage, you should delete /Library/Frameworks/CarthageKit.framework).
 
 *Using the script*
 
@@ -28,3 +28,7 @@ Also you can use the script provided to CI service. Just run in a terminal:
 **Fetching frameworks**
 
 After installing Carthage just run `carthage update --no-use-binaries --platform iOS` in the root directory of the project.
+
+**Run**
+
+Open *TravisViewerIOS.xcodeproj* wiht XCode and run *TravisViewerIOS* scheme
