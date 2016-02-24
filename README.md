@@ -1,16 +1,30 @@
 # TravisViewerIos build: ![image](https://travis-ci.org/xilosada/TravisViewerIOS.svg?branch=master)
 
-This application allows you to view all builds of public repos on Travis-CI.
-1. Enter the username in the TextField.
-2. If the username is found on github, the app calls to Travis and store all repos using CoreData.
-3. Press the button to view the list of repos.
-4. If the repo has builds on Travis-CI, you can select the repo to list all the builds.
+This application allows you to view all builds from public repos in Travis-CI.
+
+* Search by Github username. Just enter the username in the TextField.
+* If the username is found on github API, the app calls to Travis-CI Api and stores all repos and builds using CoreData.
+* Press the "Show Repos" button to view the list of repos.
+* If the repo has builds, you can select the repo to list all the builds.
 
 ## Build
 
+**Install Carthage**
+
+*Using the script*
+
 This project uses Carthage to manage the frameworks. To install the carthage tool on your system, please download and run the Carthage.pkg file for the latest release, then follow the on-screen instructions.
-Alternatively only on Xcode 7.x, you can use Homebrew and install the carthage tool on your system simply by running brew update and brew install carthage. (note: if you previously installed the binary version of Carthage, you should delete /Library/Frameworks/CarthageKit.framework).
+You can get more information about this method in this [link](https://github.com/Carthage/Carthage to get more info.)
 
-If you’d like to run the latest development version (which may be highly unstable or incompatible), simply clone the master branch of the repository, then run make install.
+*Using homebrew*
 
-After downloading the source just run [carthage update --platform iOS]
+Alternatively only on Xcode 7.x, you can use Homebrew and install the carthage tool on your system simply by running `brew update` and `brew install carthage`. (note: if you previously installed the binary version of Carthage, you should delete /Library/Frameworks/CarthageKit.framework).
+
+*Using the script*
+
+Also you can use the script provided to CI service. Just run in a terminal:
+`./update_carthage.sh 0.12`
+
+**Fetching frameworks**
+
+After installing Carthage just run `carthage update --no-use-binaries --platform iOS` in the root directory of the project.
