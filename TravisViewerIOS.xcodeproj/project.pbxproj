@@ -120,7 +120,6 @@
 		DCF7B9881C708DCF009B108A /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB571C6379D80097F81D /* RxCocoa.framework */; };
 		DCF7B99D1C71522B009B108A /* TravisViewer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCF7B94A1C7005A1009B108A /* TravisViewer.xcdatamodeld */; };
 		DCF7B99E1C716EFA009B108A /* TravisViewer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCF7B94A1C7005A1009B108A /* TravisViewer.xcdatamodeld */; };
-		DCF7B9F91C71D543009B108A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7B9F81C71D543009B108A /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -344,7 +343,6 @@
 		DCF7B9481C6FE154009B108A /* RepositoryEntity+DBModelParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RepositoryEntity+DBModelParser.swift"; sourceTree = "<group>"; };
 		DCF7B94B1C7005A1009B108A /* TravisViewer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TravisViewer.xcdatamodel; sourceTree = "<group>"; };
 		DCF7B94E1C706403009B108A /* DBUserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBUserSpec.swift; sourceTree = "<group>"; };
-		DCF7B9F81C71D543009B108A /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -559,7 +557,6 @@
 				DC2F552C1C6A6DC6006A4444 /* Main.storyboard */,
 				DCCEE4D31C6C4BF900E7345B /* RepoTableViewController.swift */,
 				DCCEE4D51C6C4C7400E7345B /* RepoTableViewCell.swift */,
-				DCF7B9F81C71D543009B108A /* CardView.swift */,
 				DCF1A72B1C72EE3100D132A7 /* ColorPalette.swift */,
 				DC6216531C7CBF71006FD0F1 /* Dependencies.swift */,
 				DC6216551C7CC25B006FD0F1 /* NetworkAlert.swift */,
@@ -1105,7 +1102,6 @@
 				DC6216581C7CCF4B006FD0F1 /* KeyedStorage.swift in Sources */,
 				DC6216561C7CC25B006FD0F1 /* NetworkAlert.swift in Sources */,
 				DCCEE4D61C6C4C7400E7345B /* RepoTableViewCell.swift in Sources */,
-				DCF7B9F91C71D543009B108A /* CardView.swift in Sources */,
 				DCCEE4ED1C6D970A00E7345B /* UserSearchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1564,6 +1560,7 @@
 				DC2AC5F91C7D95EE00E5E81B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC8BFA2D1C63534C0097F81D /* Build configuration list for PBXProject "TravisViewerIOS" */ = {
 			isa = XCConfigurationList;

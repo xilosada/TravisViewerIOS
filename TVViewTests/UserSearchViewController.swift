@@ -70,7 +70,10 @@ public class UserSearchViewController:  UIViewController {
     func renderError(error:ErrorType) -> Void{
         if(error._domain == NSURLErrorDomain){
             NetworkAlert.showErrorAlert(self, onClosed: configureEditText)
+            userField.text = ""
             userField.resetView()
+        }else {
+            setResult(false)
         }
         setErrorResult()
     }
@@ -116,7 +119,8 @@ public class UserSearchViewController:  UIViewController {
     private func setErrorResult() {
         reposButton.enabled = false
         resetReposLabel()
-        setResult(false)
+        activityIndicator.hidden = true
+        activityIndicator.stopAnimating()
     }
 
     private func resetReposLabel () {
@@ -124,8 +128,6 @@ public class UserSearchViewController:  UIViewController {
     }
     
     private func setResult(result:Bool) {
-        activityIndicator.hidden = true
-        activityIndicator.stopAnimating()
         numberOfReposLabel.hidden = false
         userField.setResult(result)
     }
