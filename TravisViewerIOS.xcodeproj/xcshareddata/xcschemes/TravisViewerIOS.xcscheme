@@ -26,7 +26,8 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -62,7 +63,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DC8BFAEB1C6354240097F81D"
+               BlueprintIdentifier = "DC2AC5F11C7D95EE00E5E81B"
                BuildableName = "TVViewTests.xctest"
                BlueprintName = "TVViewTests"
                ReferencedContainer = "container:TravisViewerIOS.xcodeproj">

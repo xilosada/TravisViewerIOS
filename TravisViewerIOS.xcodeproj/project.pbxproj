@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC2AC5F51C7D95EE00E5E81B /* TVViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2AC5F41C7D95EE00E5E81B /* TVViewTests.swift */; };
 		DC2F55291C6A6D4F006A4444 /* BuildTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2F55281C6A6D4F006A4444 /* BuildTableViewController.swift */; };
 		DC2F552B1C6A6D88006A4444 /* BuildTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2F552A1C6A6D88006A4444 /* BuildTableViewCell.swift */; };
 		DC2F552D1C6A6DC6006A4444 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC2F552C1C6A6DC6006A4444 /* Main.storyboard */; };
@@ -256,6 +257,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DC2AC5F21C7D95EE00E5E81B /* TVViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC2AC5F41C7D95EE00E5E81B /* TVViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVViewTests.swift; sourceTree = "<group>"; };
+		DC2AC5F61C7D95EE00E5E81B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC2F55281C6A6D4F006A4444 /* BuildTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildTableViewController.swift; sourceTree = "<group>"; };
 		DC2F552A1C6A6D88006A4444 /* BuildTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildTableViewCell.swift; sourceTree = "<group>"; };
 		DC2F552C1C6A6DC6006A4444 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -315,8 +319,6 @@
 		DC8BFBD31C6A16380097F81D /* RxBlocking.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxBlocking.framework.dSYM; path = Carthage/Build/iOS/RxBlocking.framework.dSYM; sourceTree = "<group>"; };
 		DCA0136A1C6AD45D00C85CC6 /* AppDelegateSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateSpec.swift; sourceTree = "<group>"; };
 		DCA013781C6AE25B00C85CC6 /* BuildTableViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildTableViewCellModel.swift; sourceTree = "<group>"; };
-		DCBC29001C733C630033D078 /* TVViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVViewTests.swift; sourceTree = "<group>"; };
-		DCBC29021C733C630033D078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCCEE4CD1C6C46EF00E7345B /* RepoViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoViewModelSpec.swift; sourceTree = "<group>"; };
 		DCCEE4CF1C6C474000E7345B /* StubNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubNetwork.swift; sourceTree = "<group>"; };
 		DCCEE4D31C6C4BF900E7345B /* RepoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewController.swift; sourceTree = "<group>"; };
@@ -346,6 +348,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DC2AC5EF1C7D95EE00E5E81B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC8BFA2F1C63534C0097F81D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -428,6 +437,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC2AC5F31C7D95EE00E5E81B /* TVViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC2AC5F41C7D95EE00E5E81B /* TVViewTests.swift */,
+				DC2AC5F61C7D95EE00E5E81B /* Info.plist */,
+			);
+			path = TVViewTests;
+			sourceTree = "<group>";
+		};
 		DC8BFA291C63534C0097F81D = {
 			isa = PBXGroup;
 			children = (
@@ -452,6 +470,7 @@
 				DC8BFAC11C6354120097F81D /* TVViewModel.framework */,
 				DC8BFACA1C6354120097F81D /* TVViewModelTests.xctest */,
 				DC8BFAE31C6354230097F81D /* TVView.framework */,
+				DC2AC5F21C7D95EE00E5E81B /* TVViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -553,7 +572,7 @@
 		DC8BFB001C63544C0097F81D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				DCBC28FF1C733C630033D078 /* TVViewTests */,
+				DC2AC5F31C7D95EE00E5E81B /* TVViewTests */,
 				DC8BFA491C63534C0097F81D /* TravisViewerIOSTests */,
 				DC8BFAAE1C6354050097F81D /* TVModelTests */,
 				DC8BFAD01C6354120097F81D /* TVViewModelTests */,
@@ -587,15 +606,6 @@
 				DC8BFB4A1C6377E10097F81D /* Nimble.framework.dSYM */,
 			);
 			name = dSYMs;
-			sourceTree = "<group>";
-		};
-		DCBC28FF1C733C630033D078 /* TVViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				DCBC29001C733C630033D078 /* TVViewTests.swift */,
-				DCBC29021C733C630033D078 /* Info.plist */,
-			);
-			path = TVViewTests;
 			sourceTree = "<group>";
 		};
 		DCCEE4DE1C6D7F2100E7345B /* BuildViewModels */ = {
@@ -687,6 +697,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		DC2AC5F11C7D95EE00E5E81B /* TVViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC2AC5F71C7D95EE00E5E81B /* Build configuration list for PBXNativeTarget "TVViewTests" */;
+			buildPhases = (
+				DC2AC5EE1C7D95EE00E5E81B /* Sources */,
+				DC2AC5EF1C7D95EE00E5E81B /* Frameworks */,
+				DC2AC5F01C7D95EE00E5E81B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TVViewTests;
+			productName = TVViewTests;
+			productReference = DC2AC5F21C7D95EE00E5E81B /* TVViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DC8BFA311C63534C0097F81D /* TravisViewerIOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC8BFA4F1C63534C0097F81D /* Build configuration list for PBXNativeTarget "TravisViewerIOS" */;
@@ -833,6 +860,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = XiLosada;
 				TargetAttributes = {
+					DC2AC5F11C7D95EE00E5E81B = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 					DC8BFA311C63534C0097F81D = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -877,11 +907,19 @@
 				DC8BFAC01C6354120097F81D /* TVViewModel */,
 				DC8BFAC91C6354120097F81D /* TVViewModelTests */,
 				DC8BFAE21C6354230097F81D /* TVView */,
+				DC2AC5F11C7D95EE00E5E81B /* TVViewTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DC2AC5F01C7D95EE00E5E81B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC8BFA301C63534C0097F81D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -960,6 +998,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DC2AC5EE1C7D95EE00E5E81B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC2AC5F51C7D95EE00E5E81B /* TVViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC8BFA2E1C63534C0097F81D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1121,6 +1167,26 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DC2AC5F81C7D95EE00E5E81B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TVViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.travisviewer.TVViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DC2AC5F91C7D95EE00E5E81B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TVViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xilosada.travisviewer.TVViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		DC8BFA4D1C63534C0097F81D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1491,6 +1557,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DC2AC5F71C7D95EE00E5E81B /* Build configuration list for PBXNativeTarget "TVViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC2AC5F81C7D95EE00E5E81B /* Debug */,
+				DC2AC5F91C7D95EE00E5E81B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		DC8BFA2D1C63534C0097F81D /* Build configuration list for PBXProject "TravisViewerIOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
