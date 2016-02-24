@@ -1,4 +1,4 @@
-# TravisViewerIos build: ![image](https://travis-ci.org/xilosada/TravisViewerIOS.svg?branch=master)
+# TravisViewerIos: ![image](https://travis-ci.org/xilosada/TravisViewerIOS.svg?branch=master) [![codecov.io](https://codecov.io/github/xilosada/TravisViewerIOS/coverage.svg?branch=master)](https://codecov.io/github/xilosada/TravisViewerIOS?branch=master)
 
 This application allows you to view all builds from public repos in Travis-CI.
 
