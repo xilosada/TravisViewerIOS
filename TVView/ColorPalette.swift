@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+/// Transform Hex Colors to UIColors
 public class ColorPalette {
     
     static let primaryColor = ColorPalette.colorWithHexString("#4CAF50"),

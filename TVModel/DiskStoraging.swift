@@ -8,6 +8,7 @@
 
 import RxSwift
 
+///Persistance API
 public protocol DiskStoraging {
     func loadUser(name:String) -> Observable<UserEntity>
     func saveUser(user:UserEntity) -> Observable<Bool>

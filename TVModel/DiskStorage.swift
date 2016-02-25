@@ -9,6 +9,7 @@ import Foundation
 import RxSwift
 import CoreData
 
+///Persistance API implementation using CoreData
 public class DiskStorage: DiskStoraging {
     
     public enum StorageError: ErrorType {
@@ -28,11 +29,10 @@ public class DiskStorage: DiskStoraging {
     
     private func loadDbUser(name:String) -> Observable<User> {
         return Observable.create { observer in
+            print("load \(name) from DB")
             do{
                 let fetchRequest = NSFetchRequest(entityName: "User")
-                if !name.isEmpty {
-                    fetchRequest.predicate = NSPredicate(format: "name == %@", name)
-                }
+                fetchRequest.predicate = NSPredicate(format: "name == %@", name)
                 
                 let users = try self.cdsManager.managedObjectContext.executeFetchRequest(fetchRequest) as! [User]
                 
@@ -41,7 +41,6 @@ public class DiskStorage: DiskStoraging {
                     observer.on(.Completed)
                     return NopDisposable.instance
                 } else {
-                    users.forEach{ self.cdsManager.managedObjectContext.deleteObject($0) }
                     observer.on(.Error(StorageError.NotFound))
                 }
             } catch {
@@ -53,9 +52,9 @@ public class DiskStorage: DiskStoraging {
     
     public func loadRepo(id:Int) -> Observable<RepositoryEntity>{
         return Observable.create { observer in
+            print("load repo \(id) from DB")
             do{
                 let fetchRequest = NSFetchRequest(entityName: "Repo")
-                //fetchRequest.predicate = NSPredicate(format: "id == %ld", id)
                 
                 let repos = try self.cdsManager.managedObjectContext.executeFetchRequest(fetchRequest) as! [Repo]
                 
@@ -75,6 +74,7 @@ public class DiskStorage: DiskStoraging {
     
     public func saveUser(user:UserEntity) -> Observable<Bool> {
         return Observable.create { observer in
+            print("Saving \(user.name) to DB")
             let _ = user.parseToDBO(self.cdsManager.managedObjectContext)
             self.cdsManager.saveContext()
             observer.on(.Next(true))
@@ -85,6 +85,7 @@ public class DiskStorage: DiskStoraging {
     
     public func flushDb() -> Observable<Bool> {
         return loadDbUser("").map{ user in
+            print("flush DB")
             self.cdsManager.managedObjectContext.deleteObject(user)
             return true
         }

@@ -21,6 +21,7 @@ public final class BuildTableViewController: UITableViewController {
     public var viewModel: BuildTableViewModeling?
 
     public override func viewDidLoad() {
+        tableView.allowsSelection = false
         if let viewModel = viewModel {
             viewModel.getBuilds(repoId!).observeOn(MainScheduler.instance)
                 .bindTo(tableView.rx_itemsWithCellIdentifier("BuildTableViewCell", cellType: BuildTableViewCell.self)) { _, viewModel, cell in
