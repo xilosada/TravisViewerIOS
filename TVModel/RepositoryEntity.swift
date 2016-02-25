@@ -43,6 +43,7 @@ extension RepositoryEntity {
     struct Mapper{
         static func parseJSONArray(jsonArray: [AnyObject]) throws -> [RepositoryEntity] {
             var repos = [RepositoryEntity]()
+            print(jsonArray)
             try jsonArray.forEach { jsonObject in
                 if let repoDictionary = jsonObject as? NSDictionary {
                     if let repo = RepositoryEntity(dictionary: repoDictionary){

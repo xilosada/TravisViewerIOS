@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+
+///AlertCotroller used when network is unreacheable
 public class NetworkAlert {
     
     public static func showErrorAlert(controller:UIViewController,onClosed:()->Void) {

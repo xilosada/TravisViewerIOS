@@ -11,7 +11,6 @@ import TVViewModel
 
 internal final class RepoTableViewCell: UITableViewCell {
     
-    
     internal var viewModel: RepoTableViewCellModeling? {
         didSet {
             let numberOfBuilds = (viewModel?.numberOfBuilds)!
@@ -22,9 +21,18 @@ internal final class RepoTableViewCell: UITableViewCell {
             descriptionLabel.lineBreakMode = .ByWordWrapping
             descriptionLabel.numberOfLines = 0
             descriptionLabel.textColor = ColorPalette.secondary_textColor
-            numberOfBuildsLabel.textColor = numberOfBuilds > 0 ? ColorPalette.primary_darkColor : ColorPalette.accentColor
+            ///enable cell selection if has builds
+            configureCellSelection(numberOfBuilds > 0)
         }
     }
+    
+    private func configureCellSelection(selectable: Bool) {
+        selectionStyle = selectable ? .Default : .None
+        userInteractionEnabled = selectable
+        numberOfBuildsLabel.textColor =
+            selectable ? ColorPalette.primary_darkColor : ColorPalette.accentColor
+    }
+    
     @IBOutlet weak var numberOfBuildsLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!

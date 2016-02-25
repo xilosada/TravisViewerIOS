@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+///Helper class to store Strings in a NSKeyedArchiver
 class KeyedStorage {
     
     static private var lastSearchFile: String {

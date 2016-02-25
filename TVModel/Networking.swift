@@ -6,8 +6,11 @@
 //  Copyright © 2016 XiLosada. All rights reserved.
 //
 
+
+
 import RxSwift
 
+///RestApi for retrieving data from the network.
 public protocol Networking
 {
     func requestRepositories(username: String) -> Observable<[RepositoryEntity]>

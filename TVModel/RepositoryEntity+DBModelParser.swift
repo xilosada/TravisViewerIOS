@@ -5,6 +5,7 @@
 //  Created by X.I. Losada on 13/02/16.
 //  Copyright © 2016 XiLosada. All rights reserved.
 //
+
 import CoreData
 
 extension RepositoryEntity {

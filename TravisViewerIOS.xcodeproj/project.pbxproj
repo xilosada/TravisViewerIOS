@@ -120,7 +120,6 @@
 		DCF7B9881C708DCF009B108A /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8BFB571C6379D80097F81D /* RxCocoa.framework */; };
 		DCF7B99D1C71522B009B108A /* TravisViewer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCF7B94A1C7005A1009B108A /* TravisViewer.xcdatamodeld */; };
 		DCF7B99E1C716EFA009B108A /* TravisViewer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCF7B94A1C7005A1009B108A /* TravisViewer.xcdatamodeld */; };
-		DCF7B9F91C71D543009B108A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7B9F81C71D543009B108A /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -344,7 +343,6 @@
 		DCF7B9481C6FE154009B108A /* RepositoryEntity+DBModelParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RepositoryEntity+DBModelParser.swift"; sourceTree = "<group>"; };
 		DCF7B94B1C7005A1009B108A /* TravisViewer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TravisViewer.xcdatamodel; sourceTree = "<group>"; };
 		DCF7B94E1C706403009B108A /* DBUserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBUserSpec.swift; sourceTree = "<group>"; };
-		DCF7B9F81C71D543009B108A /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -444,6 +442,33 @@
 				DC2AC5F61C7D95EE00E5E81B /* Info.plist */,
 			);
 			path = TVViewTests;
+			sourceTree = "<group>";
+		};
+		DC8AD6A01C7EF0A7002FE7A8 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				DCCEE4E31C6D7FD800E7345B /* UserSearchViewModel.swift */,
+				DCCEE4E71C6D855C00E7345B /* UserSearchResultModel.swift */,
+			);
+			name = Implementations;
+			sourceTree = "<group>";
+		};
+		DC8AD6A11C7EF0C9002FE7A8 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				DC2F55301C6A75AE006A4444 /* BuildTableViewModel.swift */,
+				DCA013781C6AE25B00C85CC6 /* BuildTableViewCellModel.swift */,
+			);
+			name = Implementations;
+			sourceTree = "<group>";
+		};
+		DC8AD6A21C7EF0E7002FE7A8 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				DC39F0B31C6C3F4A006C95A7 /* RepoTableViewCellModel.swift */,
+				DC39F0B51C6C4070006C95A7 /* RepoTableViewModel.swift */,
+			);
+			name = Implementations;
 			sourceTree = "<group>";
 		};
 		DC8BFA291C63534C0097F81D = {
@@ -551,20 +576,19 @@
 		DC8BFAE41C6354240097F81D /* TVView */ = {
 			isa = PBXGroup;
 			children = (
-				DC8BFAE51C6354240097F81D /* TVView.h */,
-				DCCEE4EC1C6D970A00E7345B /* UserSearchViewController.swift */,
-				DC8BFAE71C6354240097F81D /* Info.plist */,
-				DC2F55281C6A6D4F006A4444 /* BuildTableViewController.swift */,
-				DC2F552A1C6A6D88006A4444 /* BuildTableViewCell.swift */,
-				DC2F552C1C6A6DC6006A4444 /* Main.storyboard */,
-				DCCEE4D31C6C4BF900E7345B /* RepoTableViewController.swift */,
+				DC6216591C7CEE92006FD0F1 /* UserTextField.swift */,
+				DC6216551C7CC25B006FD0F1 /* NetworkAlert.swift */,
 				DCCEE4D51C6C4C7400E7345B /* RepoTableViewCell.swift */,
-				DCF7B9F81C71D543009B108A /* CardView.swift */,
+				DC2F552A1C6A6D88006A4444 /* BuildTableViewCell.swift */,
+				DC2F55281C6A6D4F006A4444 /* BuildTableViewController.swift */,
+				DCCEE4D31C6C4BF900E7345B /* RepoTableViewController.swift */,
+				DCCEE4EC1C6D970A00E7345B /* UserSearchViewController.swift */,
+				DC8BFAE51C6354240097F81D /* TVView.h */,
+				DC8BFAE71C6354240097F81D /* Info.plist */,
+				DC2F552C1C6A6DC6006A4444 /* Main.storyboard */,
 				DCF1A72B1C72EE3100D132A7 /* ColorPalette.swift */,
 				DC6216531C7CBF71006FD0F1 /* Dependencies.swift */,
-				DC6216551C7CC25B006FD0F1 /* NetworkAlert.swift */,
 				DC6216571C7CCF4B006FD0F1 /* KeyedStorage.swift */,
-				DC6216591C7CEE92006FD0F1 /* UserTextField.swift */,
 			);
 			path = TVView;
 			sourceTree = "<group>";
@@ -612,9 +636,8 @@
 			isa = PBXGroup;
 			children = (
 				DC2F552E1C6A7578006A4444 /* BuildTableViewModeling.swift */,
-				DC2F55301C6A75AE006A4444 /* BuildTableViewModel.swift */,
 				DC2F55321C6A77B0006A4444 /* BuildTableViewCellModeling.swift */,
-				DCA013781C6AE25B00C85CC6 /* BuildTableViewCellModel.swift */,
+				DC8AD6A11C7EF0C9002FE7A8 /* Implementations */,
 			);
 			name = BuildViewModels;
 			sourceTree = "<group>";
@@ -624,8 +647,7 @@
 			children = (
 				DC39F0AF1C6C3D86006C95A7 /* RepoTableViewModeling.swift */,
 				DC39F0B11C6C3DF4006C95A7 /* RepoTableViewCellModeling.swift */,
-				DC39F0B31C6C3F4A006C95A7 /* RepoTableViewCellModel.swift */,
-				DC39F0B51C6C4070006C95A7 /* RepoTableViewModel.swift */,
+				DC8AD6A21C7EF0E7002FE7A8 /* Implementations */,
 			);
 			name = RepoViewModels;
 			sourceTree = "<group>";
@@ -634,9 +656,8 @@
 			isa = PBXGroup;
 			children = (
 				DCCEE4E11C6D7FBE00E7345B /* UserSearchViewModeling.swift */,
-				DCCEE4E31C6D7FD800E7345B /* UserSearchViewModel.swift */,
 				DCCEE4E51C6D854900E7345B /* UserSearchResultModeling.swift */,
-				DCCEE4E71C6D855C00E7345B /* UserSearchResultModel.swift */,
+				DC8AD6A01C7EF0A7002FE7A8 /* Implementations */,
 			);
 			name = UserViewModels;
 			sourceTree = "<group>";
@@ -1105,7 +1126,6 @@
 				DC6216581C7CCF4B006FD0F1 /* KeyedStorage.swift in Sources */,
 				DC6216561C7CC25B006FD0F1 /* NetworkAlert.swift in Sources */,
 				DCCEE4D61C6C4C7400E7345B /* RepoTableViewCell.swift in Sources */,
-				DCF7B9F91C71D543009B108A /* CardView.swift in Sources */,
 				DCCEE4ED1C6D970A00E7345B /* UserSearchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1564,6 +1584,7 @@
 				DC2AC5F91C7D95EE00E5E81B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC8BFA2D1C63534C0097F81D /* Build configuration list for PBXProject "TravisViewerIOS" */ = {
 			isa = XCConfigurationList;

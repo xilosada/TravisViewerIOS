@@ -7,6 +7,7 @@
 //
 import RxSwift
 
+///Implementation of the Storaging protocol
 public class Storage: Storaging {
     
     private let diskStorage: DiskStoraging!
@@ -26,8 +27,7 @@ public class Storage: Storaging {
         self.cloudStorage = cloudStorage
     }
     
-    public func getUser(username:String) -> Observable<UserEntity>{
-        print(username)
+    public func getUser(username:String) -> Observable<UserEntity> {
         if let user = cachedUser {
             if user.name == username {
                 return Observable.just(user)
@@ -43,6 +43,9 @@ public class Storage: Storaging {
     
     
     private func getUserInternal(username:String) -> Observable<UserEntity>{
+        if username.isEmpty {
+            return Observable.empty()
+        }
         return diskStorage.loadUser(username).catchError{ (error) -> Observable<UserEntity> in
             self.downloadAndSaveUser(username)
         }

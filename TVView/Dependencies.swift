@@ -9,11 +9,11 @@
 import Foundation
 import RxSwift
 
+/// Singleton class that provides the Schedulers for RxSwift
 class Dependencies {
     
-    static let sharedDependencies = Dependencies() // Singleton
+    static let sharedDependencies = Dependencies()
     
-    let URLSession = NSURLSession.sharedSession()
     let backgroundWorkScheduler: ImmediateSchedulerType
     let mainScheduler: SerialDispatchQueueScheduler
     
